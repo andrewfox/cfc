@@ -309,7 +309,7 @@ function create_post_type_people() {
 
 /* Publications post type */
 add_action( 'init', 'create_post_type_publications' );
-function create_post_type_people() {
+function create_post_type_publications() {
 	register_post_type( 'publication',
 		array(
 			'labels' => array(
