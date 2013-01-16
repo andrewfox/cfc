@@ -1,0 +1,225 @@
+/* @override 
+	http://www.liveworkstudio.com/wordpress/wp-content/themes/livework/css/large.css */
+
+
+
+/* === All screens (small+) =============================== */
+
+
+
+/* ===============================
+
+Structure
+ 
+ BODY
+ - HEADER
+ - SECTION#content
+ - FOOTER
+ 
+=============================== */
+
+
+
+
+/* === Basic HTML =============================== */
+
+
+blockquote {
+	font-size: 200%;
+}
+
+
+/* === General (used in multiple situations) =============================== */
+
+.topimage {
+	max-height: 650px;
+	text-align: center;
+	overflow: hidden;
+}
+.alt .topimage {
+	max-height: 650px;
+	text-align: right;
+}
+.splash img.wp-post-image {
+	max-width: 100%;
+	height: auto;
+}
+.alt.splash img.wp-post-image {
+	width: auto;
+	max-width: 100%;
+	max-height: 650px;
+}
+
+
+
+
+/* === Header =============================== */
+.menu li a {
+	display: inline-block;
+ 	padding: 10px 10px;
+	border-bottom: none;
+	background: none;
+}
+/* === Content (everything between header and footer) =============================== */
+
+/* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
+.splash h1 {
+	font-size: 38px;
+}
+.alt #introduction {
+	padding-top: 10%;
+}
+.alt #introduction p {
+	font-size: 24px;
+}
+.alt #introduction h2 {
+	font-size: 32px;
+}
+
+/*Basic splash*/
+
+.basic .topimage {
+	text-align: center;
+}
+
+
+/* === Gallery =============================== */
+
+
+/* === Homepage (specifics) =============================== */
+
+
+
+/* === Latest (blog) =============================== */
+
+/* === Office details (on Contact page, Office page) =============================== */
+
+/* === Social media (list on single) =============================== */
+
+
+/* === Archives list =============================== */
+
+
+/* === Nav arrows =============================== */
+
+
+
+
+
+/* === Sections (repeated blocks of content on Story and Sectors pages) =============================== */
+
+
+/* === Our Story main page =============================== */
+
+
+/* === Our Story single pages =============================== */
+
+/* === Our Client's Stories main page =============================== */
+
+
+.all-logos-list ul ul li {
+	width: 10%;
+}
+
+/* === Our Team =============================== */
+
+#people li {
+	width: 16.66666666666667%;
+}
+
+
+
+/* === Person (single person page) =============================== */
+
+/* === Contact =============================== */
+
+
+
+/* === Sector (single sector page, inc. lists of case studies) =============================== */
+
+.category-highlight .wrapper {
+	margin: 100px auto 100px;
+}
+
+.case-studies .category-highlight .wrapper {
+	margin: 0px auto;
+}
+
+.case-studies-content {
+	width: 60%;
+}
+
+div.case-studies-image {
+	width: 18%;
+}
+
+/* === Featured  =============================== */
+
+.featured_post {
+}
+
+.featured_post.quote{
+	width: 320px;
+}
+
+
+.feature3, .feature4, .feature5, .feature6, .feature7, .feature8, .feature9, .feature10, .feature11, .feature12{
+	display: block;
+}
+
+/* === Case study =============================== */
+
+
+
+
+.casestudy-title {
+	font: bold 22px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* === Extra aside =============================== */
+
+.below-more li {
+	float: left;
+	width: 25%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 20px;
+}
+.below-more li:nth-child(odd) {
+	clear: none;
+}
+.below-more li:nth-child(3n-2) {
+	clear: none;
+}
+
+.below-more li:nth-child(4n-3) {
+	clear: left;
+}
+
+/* === Aside (more posts =============================== */
+
+
+
+
+
+
+
+
+/* === Footer =============================== */
+
+
+.footer-offices {
+	width: 20%;
+}
+
+/* === Colours =============================== */
+
+
+
+
+/* === Symbolset =============================== */
+
+
+
+
+
