@@ -1,4 +1,4 @@
 <?php
 	`git pull`;
-	mail('andrew@andrewfox.co.uk', '[Livework dev] updated', '');
+	mail('andrew@andrewfox.co.uk', '[CFC dev] updated', '');
 ?>
