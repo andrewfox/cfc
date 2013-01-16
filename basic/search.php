@@ -10,7 +10,14 @@
 get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
-				<h1><?php printf( __( 'Search Results for: %s', 'boilerplate' ), '' . get_search_query() . '' ); ?></h1>
+
+
+		<article id="page-search" class="main clearfix">
+
+
+			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'cfc' ), '' . get_search_query() . '' ); ?></h1>
+
+			<div class="entry-content">
 				<?php
 				/* Run the loop for the search to output the results.
 				 * If you want to overload this in a child theme then include a file
@@ -18,11 +25,30 @@ get_header(); ?>
 				 */
 				 get_template_part( 'loop', 'search' );
 				?>
+			</div><!-- .entry-content -->
+
+
+		</article><!-- #page-## -->
+
+
 <?php else : ?>
-					<h2><?php _e( 'Nothing Found', 'boilerplate' ); ?></h2>
-					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'boilerplate' ); ?></p>
+
+		<article id="page-search" class="main clearfix">
+
+			<h1 class="page-title"><?php _e( 'Nothing Found', 'cfc' ); ?></h1>
+
+			<div class="entry-content">
+				<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'boilerplate' ); ?></p>
 					<?php get_search_form(); ?>
+			</div><!-- .entry-content -->
+
+		</article><!-- #page-search -->
+
+
 <?php endif; ?>
 
+
 <?php get_sidebar(); ?>
+
+
 <?php get_footer(); ?>

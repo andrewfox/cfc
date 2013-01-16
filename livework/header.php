@@ -2,10 +2,8 @@
 /**
  * The Header for our theme.
  *
- * Displays all of the <head> section and everything up till <div id="main">
- *
  * @package WordPress
- * @subpackage Livework
+ * @subpackage CFC
  * @since Boilerplate 1.0
  */
 ?><!DOCTYPE html>
@@ -59,8 +57,11 @@
 
 
 	<body <?php body_class(); ?>>
+
+
 		<header role="banner">
-			
+
+
 			<nav id="access" role="navigation">
 
 				<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo( 'template_directory' ); ?>/img/livework-logox2.png" alt="<?php bloginfo( 'name' ); ?>"/></a></h1>
@@ -74,52 +75,9 @@
 				<?php wp_nav_menu( array('menu' => 'Countries', 'container' => '' )); ?>
 
 			</nav><!-- #access -->
-			
-			<?php 
-			// Our Story menu
-			if (is_tree(7)) { 
-			?>
-			<nav id="menu-secondary" class="nav-our-story clearfix">
-				<?php wp_nav_menu( array('menu' => 'Our Story', 'container' => '' )); ?>
-			</nav>
-			<?php } ?>
-			
-			<?php 
-			// Our Client's Stories Themes menu
-			if (is_tree(2500)) { 
-			?>
-			<nav id="menu-secondary" class="nav-sectors clearfix">
-				<?php wp_nav_menu( array('menu' => 'Themes', 'container' => '' )); ?>
-			</nav>
-			<?php } ?> 
-			
-			<?php 
-			// Our Client's Stories Sector menu
-			if (is_tree(9)) { 
-			?>
-			<nav id="menu-secondary" class="nav-sectors clearfix">
-				<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
-			</nav>
-			<?php } 
-			
-			// Our Client's Stories Sector menu on single case study pages
-			if (get_post_type( $post->ID ) == "case_study") {
-				if (is_single($post)) {
-					?>
-					<nav id="menu-secondary" class="nav-sectors clearfix">
-						<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
-					</nav>
-					<?php 
-				}
-				else {
-				
-				}
-			}
-				?>
-			
-			
 
 
 		</header>
 
-		<section id="content" role="main">
+
+

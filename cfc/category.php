@@ -8,22 +8,19 @@
  */
 
 get_header(); ?>
-				
-				
-				<article class="main">
-					
-					<div class="wrapper">
-						<h1 class="page-title">
-							<?php
-								printf( __( '%s <span class="catarchives">Category Archives</span>', 'livework' ), '' . single_cat_title( '', false ) . '' );
-							?>
-						</h1>
-					</div>
 
 
-					<?php get_sidebar( 'archives' ); ?>
-					
-				
+		<article class="main">
+
+			<h1 class="page-title">
+				<?php
+					printf( __( '%s <span class="catarchives">Category Archives</span>', 'livework' ), '' . single_cat_title( '', false ) . '' );
+				?>
+			</h1>
+
+
+			<?php get_sidebar( 'archives' ); ?>
+
 				<?php
 					$category_description = category_description();
 					if ( ! empty( $category_description ) )
@@ -36,11 +33,8 @@ get_header(); ?>
 				get_template_part( 'loop' );
 				?>
 
-<?php get_sidebar( 'archives-date' ); ?>
 
-
-
-				</article><!-- /#bodytext -->
+		</article>
 
 
 <?php get_footer(); ?>
