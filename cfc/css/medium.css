@@ -3,3 +3,36 @@
 
 
 
+/* === Header =============================== */
+
+header {
+}
+
+/*Menu reveal button*/
+.menu-reveal {
+	display: none;
+}
+
+.menu, 
+.open .menu {
+	width: auto;
+	display: inline-block;
+	clear: none;
+	padding: 0;
+	margin: 0;
+	border-top: none;
+}
+
+ 
+.menu li {
+	display: inline-block;
+	width: auto;
+	float: none;
+	background-color: none;
+}
+.menu li a {
+	display: inline-block;
+ 	padding: 10px 5px;
+	border-bottom: none;
+	background: none;
+}
