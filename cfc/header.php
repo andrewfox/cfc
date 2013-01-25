@@ -44,6 +44,9 @@
 		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.lightbox-0.5.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' ); ?>/js/main.js"></script>
 
+		<!-- Fonts-com  -->
+		<link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/1bdd2292-6494-4caa-b414-1f512b506831.css"/>
+
 		<!-- Symbolset social -->
 		<link href="<?php bloginfo('template_directory'); ?>/webfonts/ss-social.css" rel="stylesheet" />
 		<link href="<?php bloginfo('template_directory'); ?>/webfonts/ss-standard.css" rel="stylesheet" />

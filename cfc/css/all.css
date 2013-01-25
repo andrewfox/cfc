@@ -5,17 +5,18 @@
 body {
 	color: #222;
 	background: #fff;
-	font-family: "ITC Johnston", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-family: 'Johnston ITC W01 Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
 	line-height: 1.5em;
 }
 
 h1, h2, h3 {
-	font-family: Georgia, Times, serif;
 	text-shadow: 0 1px 0 #ffffff;
 }
 h1 {
 	font-size: 3em;
 	line-height: 1.25em;
+	font-family: 'AdobeCaslonW01-Regular';
+	font-weight: normal;
 }
 h2 {
 	font-size: 2em;
@@ -56,7 +57,6 @@ a:hover {
 }
 
 blockquote {
-	font-family: Georgia, Times, serif;
 	font-size: 150%;
 	line-height: 140%;
 	color: #027cb8;
@@ -300,6 +300,15 @@ footer > p {
 
 
 /* === NOTES =============================== */
+
+/*
+font-family:'AdobeCaslonW01-Regular';
+font-family:'Johnston ITC W01 Bold';
+font-family:'JohnstonITCW01-BoldItal';
+font-family:'Johnston ITC W01 Light';
+font-family:'JohnstonITCW01-LightIta';
+font-family:'ITC Johnston W01 Lt SC';
+*/
 
 
 /* ===============================
