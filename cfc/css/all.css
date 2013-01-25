@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2, h3 {
-	font-family: 'Chaparral W01 Lt', Georgia, Times, serif;
+	font-family: Georgia, Times, serif;
 	text-shadow: 0 1px 0 #ffffff;
 }
 h1 {
@@ -41,10 +41,6 @@ li {
 ol li {
 	list-style: upper-roman;
 }
-strong {
-	font-weight: bold;
-	font-family: "Helvetica Neue Bold", "HelveticaNeue-Bold", Arial, Helvetica, Geneva, sans-serif;
-}
 
 a {
 	text-decoration: none;
@@ -60,7 +56,7 @@ a:hover {
 }
 
 blockquote {
-	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
+	font-family: Georgia, Times, serif;
 	font-size: 150%;
 	line-height: 140%;
 	color: #027cb8;
