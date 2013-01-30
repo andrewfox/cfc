@@ -8,7 +8,7 @@
  * different template.
  *
  * @package WordPress
- * @subpackage Livework
+ * @subpackage Cloth Fair Chambers
  * @since Boilerplate 1.0
  */
 
