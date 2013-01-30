@@ -111,15 +111,21 @@ header {
 	width: 100%;
 	z-index: 100;
 	font-size: 12px;
+	background: red;
 }
 #access {
 }
-
+header h1 {
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 439px;
+	height: 47px;
+}
 header h1 a {
 	display: block;
 	padding: 0;
 	margin: 0;
-	vertical-align: top;
 	background: ../img/logo.png;
 	text-indent: -1000px;
 	width: 439px;
