@@ -58,8 +58,10 @@
 
 
 	<body <?php body_class(); ?>>
+
+
 		<header role="banner">
-			
+
 			<nav id="access" role="navigation">
 
 				<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -77,4 +79,3 @@
 
 		</header>
 
-		<section id="content" role="main">

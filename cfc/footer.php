@@ -10,7 +10,6 @@
  * @since Boilerplate 1.0
  */
 ?>
-		</section><!-- #content -->
 
 
 
