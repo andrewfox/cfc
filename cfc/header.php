@@ -63,7 +63,7 @@
 
 			<nav id="access" role="navigation">
 
-				<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/img/logox2.png" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
 
 				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
 				<a id="skip" href="#content" title="<?php esc_attr_e( 'Skip to content', 'livework' ); ?>"><?php _e( 'Skip to content', 'livework' ); ?></a>
