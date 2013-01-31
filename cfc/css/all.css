@@ -7,15 +7,11 @@
 
 body {
 	color: #222;
-	background: url(../img/retina_dust.png) #fff;
+	background: url('../img/retina_dust.png') #fff;
 	font-family: 'Johnston ITC W01 Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
 	line-height: 1.5em;
-}
-body {
-	color: #222;
-	background: url(../img/retina_dust.png) #fff;
-	font-family: 'Johnston ITC W01 Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
-	line-height: 1.5em;
+	text-align: center;
+	padding: 10px;
 }
 
 
@@ -55,7 +51,7 @@ ol li {
 
 a {
 	text-decoration: none;
-	color: #027cb8;
+	color: #004751;
 	-webkit-transition: all 0.3s linear;
 	-moz-transition: all 0.3s linear;
 	-ms-transition: all 0.3s linear;
@@ -63,7 +59,7 @@ a {
 	transition: all 0.3s linear;
 }
 a:hover {
-	color: #094d6f;
+	color: #006c7b;
 }
 
 blockquote {
@@ -110,15 +106,16 @@ header {
 	display: block;
 	width: 100%;
 	z-index: 100;
-	font-size: 12px;
-	background: red;
+	font-size: 15px;
+	text-align: center;
 }
 #access {
+	
 }
 header h1 {
 	display: block;
 	padding: 0;
-	margin: 0;
+	margin: 20px auto;
 	width: 439px;
 	height: 47px;
 }
@@ -126,11 +123,10 @@ header h1 a {
 	display: block;
 	padding: 0;
 	margin: 0;
-	background: ../img/logo.png;
-	text-indent: -1000px;
+	background: url('../img/logo.png');
 	width: 439px;
 	height: 47px;
-	text-overflow: none;
+	text-indent: -10000px;
 }
 
 
@@ -143,6 +139,8 @@ header h1 a {
 /*Menu reveal button*/
 
 .menu-reveal {
+	display: none;
+	;
 	background: none;
 	border: none;
 	color: #999;
@@ -168,7 +166,6 @@ header h1 a {
 .menu {
 	/*display: none;*/
 	clear: left;
-	border-top: 1px solid #333;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -185,26 +182,26 @@ header h1 a {
 	padding: 0;
 }
 .menu li a {
-	display: inline-block;
-	color: #aaa;
-	padding: 10px;
+	padding: 10px 20px;
+	text-transform: uppercase;
 }
 .menu li a:hover,
 .menu li.current_page_item a:hover,
 .menu li.current-page-ancestor a:hover {
-	color: #f1c407;
 }
 
 .menu li.current_page_item a,
 .menu li.current-page-ancestor a {
-	color: #eee;
 }
 
 
 
 /* === Content (everything between header and footer) =============================== */
 
-
+h1.page-title {
+	font-size: 40px;
+	margin: 0.5em 0;
+}
 
 /* === Gallery =============================== */
 
@@ -283,7 +280,8 @@ footer > p {
 /* === Symbolset =============================== */
 
 .ssstandard,
-.sssocial {
+.sssocial,
+.page-item-6 a {
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none;
@@ -298,7 +296,8 @@ footer > p {
 	-webkit-font-smoothing: antialiased;
 }
 
-.ssstandard {
+.ssstandard,
+.page-item-6 a {
 	font-family: "SSStandard";
 }
 

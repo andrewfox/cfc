@@ -8,7 +8,7 @@
  * different template.
  *
  * @package WordPress
- * @subpackage Cloth Fair Chambers
+ * @subpackage CFC
  * @since Boilerplate 1.0
  */
 
