@@ -41,7 +41,6 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/respond.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.lightbox-0.5.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' ); ?>/js/main.js"></script>
 
 		<!-- Fonts-com  -->
@@ -72,7 +71,7 @@
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
 				<button class="menu-reveal"><span>rows</span> Menu</button>
 
-				<?php wp_nav_menu( array( 'container' => '', 'theme_location' => 'primary' ) ); ?>
+				<?php wp_nav_menu( array( 'menu' => 'primary', 'container' => '', 'theme_location' => 'primary' ) ); ?>
 
 			</nav><!-- #access -->
 
