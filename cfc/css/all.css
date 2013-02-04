@@ -11,7 +11,7 @@ body {
 	font-family: 'Johnston ITC W01 Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
 	line-height: 1.5em;
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
 }
 
 
@@ -196,7 +196,7 @@ header h1 a img {
 /* === Content (everything between header and footer) =============================== */
 
 article.main {
-	max-width: 1070px;
+	max-width: 940px;
 	margin: 0 auto;
 }
 
@@ -272,15 +272,20 @@ h1.page-title {
 /* === Footer =============================== */
 
 #footer-images {
-	margin: 0 auto;
+	margin: 0 -10px;
 	line-height: 0;
-	max-width: 1070px;
+	max-width: 940px;
 	padding-bottom: 1em;
+	background: red;
 }
 #footer-images li {
+	box-sizing: border-box;
 	float: left;
 	width: 25%;
+	text-align: left;
+	padding: 0 10px;
 }
+
 #footer-images li img {
 	max-width: 100%;
 	height: auto;
