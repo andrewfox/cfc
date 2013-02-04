@@ -271,17 +271,31 @@ h1.page-title {
 
 /* === Footer =============================== */
 
-
+#footer-images {
+	margin: 0 auto;
+	line-height: 0;
+	max-width: 1070px;
+	padding-bottom: 1em;
+}
+#footer-images li {
+	float: left;
+	width: 25%;
+}
+#footer-images li img {
+	max-width: 100%;
+	height: auto;
+}
 footer {
 	padding: 0px 10px;
+	margin: 1em 0;
 	border-top: 1px solid #ddd;
 	clear: both;
 	font-size: 80%;
 	color: #888;
 	min-height: 400px;
+	
 }
 footer > p {
-	float: right;
 	padding: 10px;
 }
 
