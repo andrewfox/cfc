@@ -12,6 +12,13 @@
 ?>
 
 
+		<ul id="footer-images">
+			<li><img src="<?php bloginfo( 'template_directory' ); ?>/img/footer-1.jpg" alt="Photo: meeting"/></li>
+			<li><img src="<?php bloginfo( 'template_directory' ); ?>/img/footer-2.jpg" alt="Photo: architectural detail"/></li>
+			<li><img src="<?php bloginfo( 'template_directory' ); ?>/img/footer-3.jpg" alt="Photo: architectural detail"/></li>
+			<li><img src="<?php bloginfo( 'template_directory' ); ?>/img/footer-4.jpg" alt="Photo: notepad"/></li>
+		</ul>
+
 
 		<footer role="contentinfo">
 
