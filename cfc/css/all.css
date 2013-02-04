@@ -63,9 +63,8 @@ a:hover {
 }
 
 blockquote {
-	font-size: 150%;
-	line-height: 140%;
-	color: #027cb8;
+	font-size: 110%;
+	line-height: 150%;
 	margin-right: 0;
 }
 
@@ -198,9 +197,24 @@ header h1 a {
 
 /* === Content (everything between header and footer) =============================== */
 
+article.main {
+	max-width: 1070px;
+	margin: 0 auto;
+}
+
 h1.page-title {
 	font-size: 40px;
 	margin: 0.5em 0;
+}
+
+.main .wp-post-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.entry-content {
+	margin: 1em 0;
+	text-align: left;
 }
 
 /* === Gallery =============================== */

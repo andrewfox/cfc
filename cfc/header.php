@@ -33,7 +33,6 @@
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/all.css" />
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/medium.css" media="only screen and (min-width:600px)">
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/large.css" media="only screen and (min-width:1100px)">
-		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/jquery.lightbox-0.5.css" />
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		
