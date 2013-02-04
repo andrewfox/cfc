@@ -106,7 +106,6 @@ header {
 	width: 100%;
 	z-index: 100;
 	font-size: 15px;
-	text-align: center;
 }
 #access {
 	
@@ -115,17 +114,16 @@ header h1 {
 	display: block;
 	padding: 0;
 	margin: 20px auto;
-	width: 439px;
-	height: 47px;
 }
 header h1 a {
 	display: block;
 	padding: 0;
 	margin: 0;
-	background: url('../img/logo.png');
-	width: 439px;
-	height: 47px;
-	text-indent: -10000px;
+}
+header h1 a img {
+	width: 100%;
+	max-width: 439px;
+	height: auto;
 }
 
 
