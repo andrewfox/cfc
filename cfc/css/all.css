@@ -329,11 +329,11 @@ aside blockquote {
 	transition: all 0.2s linear;
 }
 #publications a:hover img {
-  -webkit-transform: rotate(3deg); 
-     -moz-transform: rotate(3deg); 
-      -ms-transform: rotate(3deg); 
-       -o-transform: rotate(3deg); 
-          transform: rotate(3deg); 
+  -webkit-transform: rotate(2deg); 
+     -moz-transform: rotate(2deg); 
+      -ms-transform: rotate(2deg); 
+       -o-transform: rotate(2deg); 
+          transform: rotate(2deg); 
 }
 #publications li {
 	text-align: left;
@@ -359,8 +359,11 @@ aside blockquote {
 	font-size: 90%;
 }
 
+/* === Single Publication =============================== */
+
 .publication-image {
 	display: block;
+	margin: 0 1em 1em 0;
 }
 .publication-image span {
 	display: block;
@@ -368,9 +371,11 @@ aside blockquote {
 .publication-image img {
 	width: 50%;
 	height: auto;
-	margin: 0 1em 1em 0;
+	margin-bottom: 0.3em;
 }
-
+.single-publication .publication-excerpt p {
+	font-size: 140%;
+}
 
 /* === Gallery =============================== */
 
@@ -434,7 +439,7 @@ aside blockquote {
 
 footer {
 	padding: 0px 10px;
-	margin: 1em 0;
+	margin: 3em 0;
 	border-top: 1px solid #ddd;
 	clear: both;
 	font-size: 80%;

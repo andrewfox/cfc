@@ -86,3 +86,25 @@ aside {
 #publications li:nth-child(2n+1) {
 	clear: left;
 }
+
+/* === Single Publication =============================== */
+
+.publication-image {
+	display: block;
+	float: left;
+	width: 33.3%;
+	margin: 0 2em;
+}
+.publication-image img {
+	width: 78%;
+	max-width: 100%;
+	height: auto;
+}
+
+.single-publication .entry-content {
+	float: left;
+	width: 50%;
+}
+
+
+
