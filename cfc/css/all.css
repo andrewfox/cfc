@@ -267,9 +267,7 @@ aside blockquote {
 	clear: both;
 	font-family: 'AdobeCaslonW01-Regular';
 	font-weight: normal;
-	font-size: 120%;
-	background-color: red;
-	margin: 0 -10px 2em -10px;
+	font-size: 120%;	margin: 0 -10px 2em -10px;
 }
 #people li {
 	width: 50%;

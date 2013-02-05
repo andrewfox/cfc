@@ -31,8 +31,8 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/all.css" />
-		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/medium.css" media="only screen and (min-width:600px)">
-		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/large.css" media="only screen and (min-width:1100px)">
+		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/medium.css" media="only screen and (min-width:480px)">
+		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/large.css" media="only screen and (min-width:720px)">
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		
