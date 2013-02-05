@@ -72,3 +72,16 @@ aside {
 #people li:nth-child(3n+1) {
 	clear: left;
 }
+
+
+/* === Publications =============================== */
+
+
+#publications li {
+	width: 50%;
+	float: left;
+	clear: none;
+}
+#publications li:nth-child(2n+1) {
+	clear: left;
+}

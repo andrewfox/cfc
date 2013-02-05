@@ -315,20 +315,34 @@ aside blockquote {
 	clear: both;
 	margin: 0 -10px 2em -10px;
 }
-#publications img {
+#publications a img {
 	max-width: 30%;
 	margin: 0 20px 20px 0;
 	float: left;
 	box-shadow: 0 1px 10px #c6c6c6;
 	-moz-box-shadow: 0 1px 10px #c6c6c6;
 	-webkit-box-shadow: 0 1px 10px #c6c6c6;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+#publications a:hover img {
+  -webkit-transform: rotate(3deg); 
+     -moz-transform: rotate(3deg); 
+      -ms-transform: rotate(3deg); 
+       -o-transform: rotate(3deg); 
+          transform: rotate(3deg); 
 }
 #publications li {
 	text-align: left;
-	width: 50%;
-	float: left;
+	display: block;
 	padding: 0 10px 10px 10px;
 	box-sizing: border-box;
+}
+#publications li {
+	clear: left;
 }
 #publications span {
 	display: block;
@@ -336,7 +350,13 @@ aside blockquote {
 .publication-title {
 	font-family: 'AdobeCaslonW01-Regular';
 	font-weight: normal;
-	font-size: 140%;
+	font-size: 150%;
+}
+.publication-excerpt p {
+	margin: 0;
+}
+.publication-date {
+	font-size: 90%;
 }
 
 
