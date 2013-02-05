@@ -14,7 +14,7 @@ get_header(); ?>
 
 
 
-		<article id="single-<?php the_ID(); ?>" class="main clearfix">
+		<article id="publication-<?php the_ID(); ?>" class="single-publication main clearfix">
 
 
 			<p class="page-title"><a href="<?php echo get_page_link(16); ?>">Publications</a></p>

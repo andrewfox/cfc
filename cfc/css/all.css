@@ -359,6 +359,17 @@ aside blockquote {
 	font-size: 90%;
 }
 
+.publication-image {
+	width: 33%;
+	display: block;
+}
+.publication-image img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 1em 1em 0;
+	;
+	float: left;
+}
 
 
 /* === Gallery =============================== */
