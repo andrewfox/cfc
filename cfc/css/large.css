@@ -1,6 +1,14 @@
+/* @override 
+	http://cfc.kendal.webfactional.com/wordpress/wp-content/themes/cfc/css/large.css */
+
 /* === Large screens + =============================== */
 
 
 
 
 
+/* === People =============================== */
+
+#people li {
+	width: 25%;
+}

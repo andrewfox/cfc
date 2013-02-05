@@ -47,12 +47,20 @@ header {
 .entry-content {
 	margin: 1em 0;
 	text-align: left;
-	width: 600px;
+	float: left;
+	width: 73%;
 }
 
 /* === Aside =============================== */
 
 aside {
-	width: 220px;
-	float: left;
+	width: 23%;
+	float: right;
+}
+
+
+/* === People =============================== */
+
+#people li {
+	width: 33.3333%;
 }
