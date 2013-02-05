@@ -66,3 +66,11 @@ aside {
 #people li {
 	width: 33.3333%;
 }
+#people li:nth-child(2n+1) {
+	background: transparent;
+	clear: none;
+}
+#people li:nth-child(3n+1) {
+	background: green;
+	clear: left;
+}
