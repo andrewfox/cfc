@@ -60,7 +60,9 @@ aside {
 
 
 /* === People =============================== */
-
+#people {
+	font-size: 120%;
+}
 #people li {
 	width: 33.3333%;
 }

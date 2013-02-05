@@ -267,7 +267,7 @@ aside blockquote {
 	clear: both;
 	font-family: 'AdobeCaslonW01-Regular';
 	font-weight: normal;
-	font-size: 120%;	margin: 0 -10px 2em -10px;
+	margin: 0 -10px 2em -10px;
 }
 #people li {
 	width: 50%;
@@ -280,7 +280,11 @@ aside blockquote {
 	max-width: 100%;
 	height: auto;
 }
-#people li > span {
+#people li >span {
+	display: block;
+}
+#people li span span {
+	font-size: 70%;
 }
 
 

@@ -8,7 +8,9 @@
 
 
 /* === People =============================== */
-
+#people {
+	font-size: 140%;
+}
 #people li {
 	width: 25%;
 }
