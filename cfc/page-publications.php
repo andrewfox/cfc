@@ -26,7 +26,7 @@ get_header(); ?>
 
 			<ul id="publications" class="clearfix">
 
-			<?php query_posts(array('post_type' => 'publication', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'date', 'paged'=> $paged));
+			<?php query_posts(array('post_type' => 'publication', 'posts_per_page' => -1 , 'order' => 'DESC', 'orderby' => 'date', 'paged'=> $paged));
 			while(have_posts()) : the_post();  ?>
 
 				<li <?php post_class(); ?>>
@@ -36,6 +36,7 @@ get_header(); ?>
 						endif;?>
 						<span class="publication-title"><?php the_title(); ?></span>
 						<span class="publication-excerpt"><?php the_excerpt(); ?></span>
+						<span class="publication-date"><?php the_time('F Y') ?></span>
 					</a>
 				</li>
 
