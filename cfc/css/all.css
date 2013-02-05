@@ -360,15 +360,15 @@ aside blockquote {
 }
 
 .publication-image {
-	width: 33%;
+	display: block;
+}
+.publication-image span {
 	display: block;
 }
 .publication-image img {
-	max-width: 100%;
+	width: 50%;
 	height: auto;
 	margin: 0 1em 1em 0;
-	;
-	float: left;
 }
 
 
