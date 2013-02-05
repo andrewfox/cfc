@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page - Barristers
+ * Template Name: Page - Clerks
  * Description: 
  *
  * @package WordPress
@@ -26,7 +26,7 @@ get_header(); ?>
 
 			<ul id="people" class="clearfix">
 
-			<?php query_posts(array('post_type' => 'people', 'category_name' => 'barrister', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged));
+			<?php query_posts(array('post_type' => 'people', 'category_name' => 'clerk', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged));
 			while(have_posts()) : the_post();  ?>
 
 				<li <?php post_class(); ?>>

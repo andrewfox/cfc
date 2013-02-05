@@ -231,8 +231,8 @@ h1.page-title {
 /* === Aside =============================== */
 
 aside {
+	margin: 0 0;
 	margin: 1em 0;
-	padding: 1em 0;
 }
 
 #history-ad {
@@ -260,6 +260,33 @@ aside blockquote {
 	margin: 2em 0;
 	text-align: left;
 }
+
+/* === People =============================== */
+
+#people {
+	clear: both;
+	font-family: 'AdobeCaslonW01-Regular';
+	font-weight: normal;
+	font-size: 120%;
+}
+#people li {
+	width: 50%;
+	float: left;
+	padding: 0 10px 10px 0;
+	box-sizing: border-box;
+}
+
+#people img {
+	max-width: 100%;
+	height: auto;
+}
+#people li >span {
+	display: block;
+	clear: left;
+	background: red;
+}
+
+
 
 
 /* === Gallery =============================== */
