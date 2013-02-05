@@ -67,9 +67,18 @@ a:hover {
 }
 
 blockquote {
-	font-size: 110%;
+	font-size: 150%;
 	line-height: 150%;
 	margin-right: 0;
+	font-family: 'AdobeCaslonW01-Regular';
+	font-weight: normal;
+}
+q {
+	font-family: 'Johnston ITC W01 Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+	font-size: 70%;
+}
+q:before {
+	content: "— ";
 }
 
 
@@ -222,7 +231,6 @@ h1.page-title {
 /* === Aside =============================== */
 
 aside {
-	border-top: 1px solid #ccc;
 	margin: 1em 0;
 	padding: 1em 0;
 }
@@ -248,10 +256,9 @@ aside {
 	margin: 0;
 }
 
-aside blockquote div {
-
-	font-family: 'AdobeCaslonW01-Regular';
-	font-weight: normal;
+aside blockquote {
+	margin: 2em 0;
+	text-align: left;
 }
 
 
@@ -312,6 +319,7 @@ aside blockquote div {
 /* === Footer =============================== */
 
 #footer-images {
+	clear: both;
 	margin: 0 auto;
 	line-height: 0;
 	max-width: 940px;

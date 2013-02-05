@@ -32,13 +32,14 @@ get_header(); ?>
 			</div><!-- .entry-content -->
 
 
+			<?php get_sidebar(); ?>
+
+
 		</article><!-- #page-## -->
 
 
 <?php endwhile; ?>
 
-
-<?php get_sidebar(); ?>
 
 
 <?php get_footer(); ?>
