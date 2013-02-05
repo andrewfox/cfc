@@ -36,7 +36,7 @@ get_header(); ?>
 
 
 
-			<ul id="footer-images" class="clearfix">
+			<ul id="page-images" class="clearfix">
 				<li><img src="<?php bloginfo( 'template_directory' ); ?>/img/footer-1.jpg" alt="Photo: meeting"/></li>
 				<li><img src="<?php bloginfo( 'template_directory' ); ?>/img/footer-2.jpg" alt="Photo: architectural detail"/></li>
 				<li><img src="<?php bloginfo( 'template_directory' ); ?>/img/footer-3.jpg" alt="Photo: architectural detail"/></li>
