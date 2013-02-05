@@ -15,10 +15,8 @@
 	width: 25%;
 }
 #people li:nth-child(3n+1) {
-	background: none;
 	clear: none;
 }
 #people li:nth-child(4n+1) {
-	background: pink;
 	clear: left;
 }
