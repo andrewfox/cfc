@@ -24,8 +24,10 @@
 			<div id="quote">
 				<?php if( get_field('quote-text') ): ?>
 				<blockquote>
-					<div><?php the_field('quote-text'); ?></div>
-					<div><?php the_field('quote-attribution'); ?></div>
+					<div class="quotation">
+						<?php the_field('quote-text'); ?>
+					</div>
+					<q><?php the_field('quote-attribution'); ?></q>
 				</blockquote>
 				<?php endif; ?>
 			</div>
