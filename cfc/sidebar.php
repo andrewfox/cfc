@@ -14,7 +14,7 @@
 			<div id="history-ad">
 				<h3>
 					<a href="">
-						<img src="" alt="photo: Cloth Fair Chambers - a History" />
+						<img src="<?php bloginfo( 'template_directory' ); ?>/img/historyx2.jpg" alt="photo: Cloth Fair Chambers - a History" />
 						Cloth Fair Chambers - A History
 					</a>
 				</h3>
