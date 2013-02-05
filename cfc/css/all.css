@@ -349,26 +349,27 @@ aside blockquote {
 
 /* === Footer =============================== */
 
+
 #footer-images {
 	clear: both;
-	margin: 0 auto;
-	line-height: 0;
+	font-weight: normal;
+	margin: 0 -10px 2em -10px;
 	max-width: 940px;
-	padding-bottom: 1em;
 }
 #footer-images li {
-	box-sizing: border-box;
-	float: left;
 	width: 25%;
-	text-align: left;
-	padding: 0 -10px;
-	margin: 0 0px;
+	float: left;
+	padding: 0 10px 10px 10px;
+	box-sizing: border-box;
 }
-
-#footer-images li img {
+#footer-images img {
 	max-width: 100%;
 	height: auto;
 }
+
+
+
+
 footer {
 	padding: 0px 10px;
 	margin: 1em 0;
