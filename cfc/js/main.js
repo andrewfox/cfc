@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 /* Slideshow */
 
-$('.slideshow li').hide().filter(':lt(4)').show(); 
+$('.slideshow li').addClass( 'off' ).filter(':lt(4)').removeClass( 'off' ); 
 
 
 });
