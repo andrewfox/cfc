@@ -44,6 +44,7 @@ get_header(); ?>
 
 			</ul>
 
+			<?php wp_reset_query();?>
 
 
 
