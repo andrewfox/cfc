@@ -535,7 +535,8 @@ footer > p {
 .ssstandard,
 .sssocial,
 .menu-item-11 a,
-.arrow {
+.arrow,
+#contact-list span {
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none;
@@ -552,7 +553,8 @@ footer > p {
 
 .ssstandard,
 .menu-item-11 a,
-.arrow {
+.arrow,
+#contact-list span {
 	font-family: "SSStandard";
 }
 
