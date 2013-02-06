@@ -90,7 +90,7 @@ get_header(); ?>
 
 				<ul id="news-list" class="clearfix">
 
-				<?php query_posts(array('post_type' => 'posts', 'posts_per_page' => 5 , 'order' => 'DESC', 'orderby' => 'date', 'paged'=> $paged));
+				<?php query_posts(array('post_type' => 'post', 'posts_per_page' => 5 , 'order' => 'DESC', 'orderby' => 'date', 'paged'=> $paged));
 				while(have_posts()) : the_post();  ?>
 	
 					<li <?php post_class(); ?>>
