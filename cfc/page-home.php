@@ -45,8 +45,8 @@ get_header(); ?>
 	
 				</ul>
 
-				<div class="arrow-b">back</div>
-				<div class="arrow-f">forward</div>
+				<div class="arrow back">back</div>
+				<div class="arrow forward">forward</div>
 
 			</div><!-- /.people-slideshow -->
 

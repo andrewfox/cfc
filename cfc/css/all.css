@@ -340,8 +340,25 @@ aside #quote blockquote {
 	font-size: 70%;
 }
 
-/*People home*/
+/*People home inc. slideshow */
 
+#people-slideshow {
+	position: relative;
+	background: red;
+	clear: both;
+}
+.arrow,
+.arrow {
+	position: absolute;
+	color: white;
+	top: 100px;
+}
+.back {
+	left: 10px;
+}
+.forward {
+	right: 10px;
+}
 #people.slideshow {
 	margin: 0;
 	padding: 20px 10px;
@@ -519,7 +536,9 @@ footer > p {
 
 .ssstandard,
 .sssocial,
-.menu-item-11 a {
+.menu-item-11 a,
+.arrow-b,
+.arrow-f {
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none;
@@ -535,7 +554,9 @@ footer > p {
 }
 
 .ssstandard,
-.menu-item-11 a {
+.menu-item-11 a,
+.arrow-b,
+.arrow-f {
 	font-family: "SSStandard";
 }
 
