@@ -26,7 +26,7 @@ get_header(); ?>
 			</div><!-- .entry-content -->
 
 
-			<ul id="people" class="slideshow clearfix">
+			<ul id="people-slideshow" class="clearfix">
 
 			<?php query_posts(array('post_type' => 'people', 'category_name' => 'barrister', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged));
 			while(have_posts()) : the_post();  ?>

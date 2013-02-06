@@ -287,6 +287,29 @@ aside #quote blockquote {
 	text-align: left;
 	font-size: 150%;
 }
+
+/* === Home =============================== */
+
+.home .entry-content {
+	width: 100%;
+	padding: 20px 100px 20px 20px;
+	color: white;
+	margin: 3px 0;
+	box-sizing: border-box;
+	background-color: #0f4752;
+}
+.home .entry-content h2 {
+	text-shadow: none;
+	margin: 0;
+}
+.home .entry-content h2 em {
+	font-size: 60%;
+	font
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Johnston ITC W01 Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+}
+
 /* === People =============================== */
 
 #people {
