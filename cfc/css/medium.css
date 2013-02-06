@@ -85,12 +85,19 @@ aside {
 	padding: 0;
 }
 #people.slideshow li {
-	width: 215px;
 	box-sizing: border-box;
 	float: left;
 }
+#people.slideshow li {
+	width: 24%;
+	font-size: 80%
+}
 #people.slideshow li.off {
 	display: none;
+}
+#people.slideshow li.more {
+	margin-top: 2em;
+	font-style: italic;
 }
 
 /* Arrows (show if JS is on) */
