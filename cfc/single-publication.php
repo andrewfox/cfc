@@ -44,7 +44,6 @@ get_header(); ?>
 
 
 
-
 		</article>
 
 

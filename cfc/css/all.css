@@ -364,18 +364,23 @@ aside blockquote {
 }
 
 /* === Single Publication =============================== */
-
-.publication-image {
+.single-publication .publication-date {
+	margin-top: -1.2em;
+	margin-bottom: 3em;
+}
+a.publication-image {
 	display: block;
-	margin: 0 1em 1em 0;
+	margin: 0;
+	width: 25%;
+	margin-right: 2em;
 }
 .publication-image span {
 	display: block;
 }
 .publication-image img {
-	width: 50%;
+	max-width: 100%;
 	height: auto;
-	margin-bottom: 0.3em;
+	margin-bottom: 0.5em;
 	box-shadow: 0 1px 10px #ccc;
 	-moz-box-shadow: 0 1px 10px #ccc;
 	-webkit-box-shadow: 0 1px 10px #ccc;
@@ -384,12 +389,12 @@ aside blockquote {
 	font-size: 140%;
 }
 
-a.download {
+.download {
 	padding: 4px 12px;
 	background-color: #c7e38e;
 	border-radius: 3px;
 }
-a.download:hover {
+.download:hover  {
 	box-shadow: 0 1px 10px #ccc;
 	-moz-box-shadow: 0 1px 10px #ccc;
 	-webkit-box-shadow: 0 1px 10px #ccc;
