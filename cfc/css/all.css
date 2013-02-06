@@ -228,12 +228,14 @@ h1.page-title {
 	text-align: left;
 }
 
+/*Row of four images at bottom of Pages*/
 
 #page-images {
 	clear: both;
 	font-weight: normal;
 	margin: 0 -10px 2em -10px;
-	max-width: 940px;
+	max-width: 960px;
+	box-sizing: border-box;
 }
 #page-images li {
 	width: 25%;
@@ -275,15 +277,16 @@ aside {
 	margin: 0;
 }
 
-aside blockquote {
-	margin: 2em 0;
-	text-align: left;
-}
+
 #quote blockquote {
 	margin: 1em 0;
 	font-size: 200%;
 }
-
+aside #quote blockquote {
+	margin: 2em 0;
+	text-align: left;
+	font-size: 150%;
+}
 /* === People =============================== */
 
 #people {
