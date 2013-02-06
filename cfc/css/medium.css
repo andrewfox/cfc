@@ -75,6 +75,39 @@ aside {
 	clear: left;
 }
 
+/* People slideshow on homepage */
+
+#people-slideshow {
+	padding: 30px;
+	
+}
+#people.slideshow {
+	padding: 20px 10px;
+}
+
+/* Arrows */
+.arrow {
+	display: block;
+	position: absolute;
+	color: white;
+	top: 100px;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 120%;
+}
+.arrow:hover {
+	color: #d6e28c;
+}
+.arrow.off {
+	opacity: .5;
+	cursor: auto;
+}
+.back {
+	left: 5px;
+}
+.forward {
+	right: 5px;
+}
 
 /* === Publications =============================== */
 

@@ -344,25 +344,21 @@ aside #quote blockquote {
 
 #people-slideshow {
 	position: relative;
-	background: red;
 	clear: both;
+	background: rgba(2,73,83,.7);
 }
-.arrow,
 .arrow {
-	position: absolute;
-	color: white;
-	top: 100px;
-}
-.back {
-	left: 10px;
-}
-.forward {
-	right: 10px;
+	display: none;
 }
 #people.slideshow {
 	margin: 0;
-	padding: 20px 10px;
-	background: rgba(2,73,83,.7);
+	padding: 20px 0;
+}
+#people-slideshow a {
+	color: white;
+}
+#people-slideshow a:hover {
+	color: #d6e28c;
 }
 
 
@@ -537,8 +533,7 @@ footer > p {
 .ssstandard,
 .sssocial,
 .menu-item-11 a,
-.arrow-b,
-.arrow-f {
+.arrow {
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none;
@@ -555,8 +550,7 @@ footer > p {
 
 .ssstandard,
 .menu-item-11 a,
-.arrow-b,
-.arrow-f {
+.arrow {
 	font-family: "SSStandard";
 }
 
