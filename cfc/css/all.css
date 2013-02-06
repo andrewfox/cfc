@@ -346,6 +346,7 @@ aside #quote blockquote {
 	position: relative;
 	clear: both;
 	background: rgba(2,73,83,.7);
+	overflow: hidden;
 }
 .arrow {
 	display: none;
@@ -353,6 +354,7 @@ aside #quote blockquote {
 #people.slideshow {
 	margin: 0;
 	padding: 20px 0;
+	box-sizing: border-box;
 }
 #people-slideshow a {
 	color: white;

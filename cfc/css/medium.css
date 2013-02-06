@@ -78,15 +78,22 @@ aside {
 /* People slideshow on homepage */
 
 #people-slideshow {
-	padding: 30px;
-	
+	padding: 40px;
+	overflow: hidden;
 }
 #people.slideshow {
-	padding: 20px 10px;
+	padding: 0;
+	width: 333000px;
+	background: #444;
+}
+#people.slideshow li {
+	width: 215px;
+	box-sizing: border-box;
+	float: left;
 }
 
 /* Arrows */
-.arrow {
+.js .arrow {
 	display: block;
 	position: absolute;
 	color: white;
@@ -98,9 +105,12 @@ aside {
 .arrow:hover {
 	color: #d6e28c;
 }
+.arrow.off:hover {
+	color: white;
+}
 .arrow.off {
-	opacity: .5;
-	cursor: auto;
+	opacity: .3;
+	cursor: default;
 }
 .back {
 	left: 5px;
