@@ -42,6 +42,12 @@ get_header(); ?>
 					</li>
 	
 				<?php endwhile; ?>
+
+					<li class="more">
+						<a href="<?php echo get_page_link(14); ?>" title="See all Cloth Fair Chambers barristers" rel="bookmark">
+							See all Barristers&hellip;
+						</a>
+					</li>
 	
 				</ul>
 
