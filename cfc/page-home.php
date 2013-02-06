@@ -59,89 +59,98 @@ get_header(); ?>
 			<?php wp_reset_query();?>
 
 
+
+
+
+
 			<div id="homepage-lists">
 
+				<div class="column">
 
-
-
-				<ul id="publications" class="clearfix">
-
-				<?php query_posts(array('post_type' => 'publication', 'posts_per_page' => 2 , 'order' => 'DESC', 'orderby' => 'date', 'paged'=> $paged));
-				while(have_posts()) : the_post();  ?>
+					<h2><a href="<?php echo get_page_link(16); ?>">Publications</a></h2>
 	
-					<li <?php post_class(); ?>>
-						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-							<?php if(has_post_thumbnail()) :
-							the_post_thumbnail('medium'); 
-							endif;?>
-							<span class="publication-title"><?php the_title(); ?></span>
-							<span class="publication-date"><?php the_time('F Y') ?></span>
-						</a>
-					</li>
-
-				<?php endwhile; ?>
-
-				</ul>
-
-				<?php wp_reset_query();?>
-
-
-
-
-				<ul id="news-list" class="clearfix">
-
-				<?php query_posts(array('post_type' => 'post', 'posts_per_page' => 5 , 'order' => 'DESC', 'orderby' => 'date', 'paged'=> $paged));
-				while(have_posts()) : the_post();  ?>
+					<ul id="publications" class="clearfix">
 	
-					<li <?php post_class(); ?>>
-						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-							<span class="post-title"><?php the_title(); ?></span>
-							<span class="publication-date"><?php the_time('F Y') ?></span>
-						</a>
-					</li>
-
-				<?php endwhile; ?>
-
-				</ul>
-
-				<?php wp_reset_query();?>
-
-
-
-
-				<ul id="contact-list" class="clearfix">
-
-					<li class="contact-newsletter">
-						<h3>Sign-up to the newsletter</h3>
-						<p><input type="text" /> <input type="submit"/></p>
-					</li>
+					<?php query_posts(array('post_type' => 'publication', 'posts_per_page' => 2 , 'order' => 'DESC', 'orderby' => 'date', 'paged'=> $paged));
+					while(have_posts()) : the_post();  ?>
+		
+						<li <?php post_class(); ?>>
+							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+								<?php if(has_post_thumbnail()) :
+								the_post_thumbnail('medium'); 
+								endif;?>
+								<span class="publication-title"><?php the_title(); ?></span>
+								<span class="publication-date"><?php the_time('F Y') ?></span>
+							</a>
+						</li>
+	
+					<?php endwhile; ?>
+	
+					</ul>
+	
+					<?php wp_reset_query();?>
+				
+				</div><!-- /.column -->
 
 
-					<li class="contact-address">
-						<h3>Address</h3>
-						<p>39-40 Cloth Fair,</p>
-						<p>London</p>
-						<p>EC1A 7NT</p>
-						<p>United Kingdom</p>
-					</li>
+				<div class="column">
+
+					<h2><a href="<?php echo get_page_link(8); ?>">Case News &amp; Press</a></h2>
+	
+					<ul id="news-list" class="clearfix">
+	
+					<?php query_posts(array('post_type' => 'post', 'posts_per_page' => 5 , 'order' => 'DESC', 'orderby' => 'date', 'paged'=> $paged));
+					while(have_posts()) : the_post();  ?>
+		
+						<li <?php post_class(); ?>>
+							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+								<span class="post-title"><?php the_title(); ?></span>
+								<span class="publication-date"><?php the_time('F Y') ?></span>
+							</a>
+						</li>
+	
+					<?php endwhile; ?>
+	
+					</ul>
+	
+					<?php wp_reset_query();?>
+
+				</div><!-- /.column -->
 
 
-					<li class="contact-address">
-						<h3>Contact</h3>
-						<p><a href=""><span>telephone</span> 020 7710 6444</a></p>
-						<p><a href=""><span>email</span> email senior clerk</a></p>
-						<p><a href=""><span>email</span> email office manager</a></p>
-					</li>
+				<div class="column">
 
+					<h2><a href="<?php echo get_page_link(18); ?>">Contact details</a></h2>
 
-				</ul>
+					<ul id="contact-list" class="clearfix">
 
+						<li class="contact-newsletter">
+							<h3>Sign-up to the newsletter</h3>
+							<p><input type="text" /> <input type="submit"/></p>
+						</li>
 
+						<li class="contact-address">
+							<h3>Address</h3>
+							<p>39-40 Cloth Fair,</p>
+							<p>London</p>
+							<p>EC1A 7NT</p>
+							<p>United Kingdom</p>
+						</li>
 
+						<li class="contact-address">
+							<h3>Contact</h3>
+							<p><a href=""><span>telephone</span> 020 7710 6444</a></p>
+							<p><a href=""><span>email</span> email senior clerk</a></p>
+							<p><a href=""><span>email</span> email office manager</a></p>
+						</li>
 
+					</ul>
 
+				</div><!-- /.column -->
 
 			</div> <!-- /#homepage-lists -->
+
+
 
 
 
