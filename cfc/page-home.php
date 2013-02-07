@@ -103,10 +103,25 @@ get_header(); ?>
 					while(have_posts()) : the_post();  ?>
 		
 						<li <?php post_class(); ?>>
-							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-								<span class="post-title"><?php the_title(); ?></span>
+
+							<?php if (get_field('post-url')) : ?>
+
+							<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+								<span class="post-title"><?php the_title(); ?> &rarr;</span>
+								<span class="post-people"><?php the_field('post-people') ?></span>
 								<span class="publication-date"><?php the_time('F Y') ?></span>
 							</a>
+
+							<?php else : ?>
+
+							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+								<span class="post-title"><?php the_title(); ?></span>
+								<span class="post-people"><?php the_field('post-people') ?></span>
+								<span class="publication-date"><?php the_time('F Y') ?></span>
+							</a>
+
+							<?php endif; ?>
+
 						</li>
 	
 					<?php endwhile; ?>
@@ -140,8 +155,8 @@ get_header(); ?>
 						<li class="contact-address">
 							<h3>Contact</h3>
 							<p><a href=""><span>telephone</span> 020 7710 6444</a></p>
-							<p><a href=""><span>email</span> email senior clerk</a></p>
-							<p><a href=""><span>email</span> email office manager</a></p>
+							<p><a href=""><span>email</span> senior clerk</a></p>
+							<p><a href=""><span>email</span> office manager</a></p>
 						</li>
 
 					</ul>
