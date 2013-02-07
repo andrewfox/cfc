@@ -118,7 +118,7 @@ get_header(); ?>
 
 							<?php } ?>
 
-								<span class="publication-date"><span>time</span> <?php the_time('F Y') ?></span>
+								<span class="publication-date"><?php the_time('F Y') ?></span>
 
 								<?php $posts = get_field('post-people');
 								if( $posts ): ?>
@@ -126,7 +126,7 @@ get_header(); ?>
 									<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 										<?php setup_postdata($post); ?>
 									    <li>
-									    	<?php the_title(); ?>
+									    	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 									    </li>
 									<?php endforeach; ?>
 									</ul>
