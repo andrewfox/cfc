@@ -118,7 +118,7 @@ get_header(); ?>
 
 							<?php } ?>
 
-								<span class="publication-date"><?php the_time('F Y') ?></span>
+								<span class="publication-date"><span>time</span> <?php the_time('F Y') ?></span>
 
 								<?php $posts = get_field('post-people');
 								 

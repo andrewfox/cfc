@@ -17,16 +17,10 @@ get_header(); ?>
 		<article id="publication-<?php the_ID(); ?>" class="single-publication main clearfix">
 
 
-			<h1 class="page-title"><?php the_title(); ?></h1>
-			<p class="publication-date"><?php the_time('F Y') ?></p>
+			<h1 class="page-title"><?php the_title(); ?> <?php the_field('people-title'); ?></h1>
 
 			<?php if ( has_post_thumbnail() ) { ?>
-
-			<a href="<?php the_field('publication-file'); ?>" class="publication-image">
 				<?php the_post_thumbnail('medium'); ?>
-				<span class="download">View &lsquo;<?php the_title(); ?>&rsquo;</span>
-			</a>
-
 			<?php } ?>
 
 
@@ -37,10 +31,16 @@ get_header(); ?>
 
 				<?php the_content(); ?>
 
-				<p><a href="<?php the_field('publication-file'); ?>" class="download">View &lsquo;<?php the_title(); ?>&rsquo;</a></p>
+				<div class="people-directories_information">
+					<?php the_field('people-directories_information'); ?>
+				</div>
+
+				<div class="people-area_of_practice">
+					<?php the_field('people-area_of_practice'); ?>
+				</div>
+
 
 			</div> <!-- /.entry-content -->
-
 
 
 		</article>

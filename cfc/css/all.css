@@ -536,7 +536,8 @@ footer > p {
 .sssocial,
 .menu-item-11 a,
 .arrow,
-#contact-list span {
+#contact-list span,
+.post-title span {
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none;
@@ -554,7 +555,8 @@ footer > p {
 .ssstandard,
 .menu-item-11 a,
 .arrow,
-#contact-list span {
+#contact-list span,
+.post-title span {
 	font-family: "SSStandard";
 }
 
