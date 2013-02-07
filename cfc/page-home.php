@@ -108,14 +108,13 @@ get_header(); ?>
 
 							<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 								<span class="post-title"><?php the_title(); ?> &rarr;</span>
-								<span class="publication-date"><?php the_time('F Y') ?></span>
 
-								<?php $people = get_field('relationship');
+								<?php $posts = get_field('post-people');
 								 
-								if( $people ): ?>
+								if( $posts ): ?>
 									<ul>
-									<?php foreach( $peoples as $people): // variable must be called $post (IMPORTANT) ?>
-										<?php setup_postdata($people); ?>
+									<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+										<?php setup_postdata($post); ?>
 									    <li>
 									    	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 									    </li>
@@ -124,6 +123,7 @@ get_header(); ?>
 									<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 								<?php endif; ?>
  
+								<span class="publication-date"><?php the_time('F Y') ?></span>
 							</a>
 
 							<?php } else { ?>

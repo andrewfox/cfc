@@ -17,24 +17,24 @@ body {
 
 h1, h2, h3 {
 	text-shadow: 0 1px 0 #ffffff;
+	font-family: 'AdobeCaslonW01-Regular';
+	font-weight: normal;
+}
+h1 em, h2 em, h3 em {
+	font-family: 'AdobeCaslonW01-Italic';
+	font-weight: normal;
 }
 h1 {
 	font-size: 3em;
 	line-height: 1.25em;
-	font-family: 'AdobeCaslonW01-Regular';
-	font-weight: normal;
 }
 h2 {
 	font-size: 2em;
 	line-height: 1.25em;
-	font-family: 'AdobeCaslonW01-Regular';
-	font-weight: normal;
 }
 h3 {
 	font-size: 1.4em;
 	line-height: 1.5em;
-	font-family: 'AdobeCaslonW01-Regular';
-	font-weight: normal;
 }
 
 p {
