@@ -104,7 +104,7 @@ get_header(); ?>
 		
 						<li <?php post_class(); ?>>
 
-							<?php if (get_field('post-url'): ?>
+							<?php if ( get_field('post-url') ): ?>
 
 							<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 								<span class="post-title"><?php the_title(); ?> &rarr;</span>
