@@ -99,7 +99,7 @@ get_header(); ?>
 	
 					<ul id="news-list" class="clearfix">
 	
-					<?php query_posts(array('post_type' => 'post', 'posts_per_page' => 5 , 'order' => 'DESC', 'orderby' => 'date', 'paged'=> $paged));
+					<?php query_posts(array('post_type' => 'post', 'posts_per_page' => 4 , 'order' => 'DESC', 'orderby' => 'date', 'paged'=> $paged));
 					while(have_posts()) : the_post();  ?>
 		
 						<li <?php post_class(); ?>>
@@ -113,10 +113,12 @@ get_header(); ?>
 							<?php } else { ?>
 
 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-								<span class="post-title"><?php the_title(); ?> &rarr;</span>
+								<span class="post-title"><?php the_title(); ?></span>
 							</a>
 
 							<?php } ?>
+
+								<span class="publication-date"><?php the_time('F Y') ?></span>
 
 								<?php $posts = get_field('post-people');
 								 
@@ -132,8 +134,6 @@ get_header(); ?>
 									<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 								<?php endif; ?>
  
-								<span class="publication-date"><?php the_time('F Y') ?></span>
-
 
 						</li>
 	
