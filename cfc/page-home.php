@@ -108,10 +108,13 @@ get_header(); ?>
 
 							<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 								<span class="post-title"><?php the_title(); ?> &rarr;</span>
+							</a>
 
 							<?php } else { ?>
 
 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+								<span class="post-title"><?php the_title(); ?> &rarr;</span>
+							</a>
 
 							<?php } ?>
 
@@ -130,7 +133,6 @@ get_header(); ?>
 								<?php endif; ?>
  
 								<span class="publication-date"><?php the_time('F Y') ?></span>
-							</a>
 
 
 						</li>
