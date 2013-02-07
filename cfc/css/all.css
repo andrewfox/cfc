@@ -40,7 +40,14 @@ h3 {
 p {
 	margin: 0 0 20px 0;
 }
-
+strong {
+	font-family: 'Johnston ITC W01 Bold', 'HelveticaNeue-Bold', 'Helvetica Neue Bold', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+	font-weight: normal;
+}
+em {
+	font-family: 'JohnstonITCW01-LightIta', 'HelveticaNeue-Italic', 'Helvetica Neue Italic', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+	font-weight: normal;
+}
 
 ul {
 	list-style: none;
