@@ -107,7 +107,7 @@ get_header(); ?>
 							<?php if ( get_field('post-url') ) { ?>
 
 							<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-								<span class="post-title"><?php the_title(); ?> &rarr;</span>
+								<span class="post-title"><span>globe</span> <?php the_title(); ?></span>
 							</a>
 
 							<?php } else { ?>
@@ -158,7 +158,7 @@ get_header(); ?>
 						</li>
 
 						<li class="contact-address">
-							<h3>Address</h3>
+							<h3><span>location</span> Address</h3>
 							<p>39-40 Cloth Fair,</p>
 							<p>London</p>
 							<p>EC1A 7NT</p>
