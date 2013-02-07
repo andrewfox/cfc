@@ -311,6 +311,40 @@ aside #quote blockquote {
 	white-space:nowrap;
 }
 
+.column {
+	text-align: left;
+	padding: 20px 30px 20px 0;
+	box-sizing: border-box;
+}
+
+.column h2 {
+	font-size: 130%;
+}
+.column h3 {
+	font-size: 120%;
+	margin: 0;
+}
+#news-list .post-title {
+	display: block;
+	font-family: 'AdobeCaslonW01-Regular';
+	font-weight: normal;
+	font-size: 110%;
+}
+#news-list .post-title span {
+	color: #8c1c6b;
+	font-size: 80%;
+}
+
+#contact-list p {
+	margin: 0;
+}
+#contact-list span {
+	font-size: 80%;
+	color: #8c1c6b;
+}
+
+
+
 /* === People =============================== */
 
 #people {

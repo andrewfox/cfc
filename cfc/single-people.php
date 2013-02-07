@@ -32,10 +32,12 @@ get_header(); ?>
 				<?php the_content(); ?>
 
 				<div class="people-directories_information">
+					<h2>Directories Information</h2>
 					<?php the_field('people-directories_information'); ?>
 				</div>
 
 				<div class="people-area_of_practice">
+					<h2>Areas of Practice</h2>
 					<?php the_field('people-area_of_practice'); ?>
 				</div>
 
