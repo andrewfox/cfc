@@ -95,7 +95,7 @@ get_header(); ?>
 
 				<div class="column">
 
-					<h2><a href="<?php echo get_page_link(8); ?>">Case News &amp; Press</a></h2>
+					<h2><a href="<?php echo get_page_link(8); ?>">Case News <em>&amp;</em> Press</a></h2>
 	
 					<ul id="news-list" class="clearfix">
 	
@@ -104,15 +104,29 @@ get_header(); ?>
 		
 						<li <?php post_class(); ?>>
 
-							<?php if ( get_field('post-url') ): ?>
+							<?php if ( get_field('post-url') ) { ?>
 
 							<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 								<span class="post-title"><?php the_title(); ?> &rarr;</span>
-								<span class="post-people"><?php the_field('post-people') ?></span>
 								<span class="publication-date"><?php the_time('F Y') ?></span>
+
+								<?php $people = get_field('relationship');
+								 
+								if( $people ): ?>
+									<ul>
+									<?php foreach( $peoples as $people): // variable must be called $post (IMPORTANT) ?>
+										<?php setup_postdata($people); ?>
+									    <li>
+									    	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+									    </li>
+									<?php endforeach; ?>
+									</ul>
+									<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+								<?php endif; ?>
+ 
 							</a>
 
-							<?php else: ?>
+							<?php } else { ?>
 
 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 								<span class="post-title"><?php the_title(); ?></span>
@@ -120,7 +134,7 @@ get_header(); ?>
 								<span class="publication-date"><?php the_time('F Y') ?></span>
 							</a>
 
-							<?php endif; ?>
+							<?php } ?>
 
 						</li>
 	
