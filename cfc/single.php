@@ -19,7 +19,22 @@ get_header(); ?>
 			<h1 class="page-title"><?php the_title(); ?></h1>
 
 			<div class="entry-content">
+				
+				<?php $posts = get_field('post-people');
+				if( $posts ): ?>
+					<ul>
+					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+						<?php setup_postdata($post); ?>
+					    <li>
+					    	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					    </li>
+					<?php endforeach; ?>
+					</ul>
+					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+				<?php endif; ?>
+			
 				<?php the_content(); ?>
+				
 			</div> <!-- /.entry-content -->
 
 
