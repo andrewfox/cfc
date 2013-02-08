@@ -52,9 +52,22 @@
 					<?php the_content(); ?>
 				</div>
 
+						<?php $locations = get_field('post_people');
+ 
+						?>
+						<?php if( $locations ): ?>
+							<ul>
+							<?php foreach( $locations as $location ): ?>
+								<li>
+									<a href="<?php echo get_permalink( $location->ID ); ?>">
+										<?php echo get_the_title( $location->ID ); ?>
+									</a>
+								</li>
+							<?php endforeach; ?>
+							</ul>
+						<?php endif; ?>
+ 
 
-
-		
 			</div><!-- /#post-n -->
 
 
@@ -70,7 +83,7 @@
 	<?php /* Display navigation to next/previous pages when applicable */ ?>
 	<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 
-			<nav id="nav-above" class="navigation">
+			<nav class="page-navigation">
 				<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older', 'livework' ) ); ?></div>
 				<div class="nav-next"><?php previous_posts_link( __( 'Newer<span class="meta-nav">&rarr;</span>', 'livework' ) ); ?></div>
 			</nav><!-- #nav-above -->
