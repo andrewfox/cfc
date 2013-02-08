@@ -69,6 +69,7 @@
 										$image_attributes = wp_get_attachment_image_src( $person->ID ); // returns an array
 										?>
 										<img src="<?php echo $image_attributes[0]; ?>" />
+										<?php the_post_thumbnail('large'); ?>
 
 										<span><?php echo get_the_title( $person->ID ); ?></span>
 
