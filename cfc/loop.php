@@ -48,6 +48,10 @@
 
 				<span class="publication-date"><?php the_time('jS F Y') ?></span>
 
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div>
+
 				<?php $posts = get_field('post-people');
 				if( $posts ): ?>
 					<ul class="people-related">
@@ -66,13 +70,9 @@
 						</li>
 					<?php endforeach; ?>
 					</ul>
-					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 				<?php endif; ?>
 
 
-				<div class="entry-content">
-					<?php the_content(); ?>
-				</div>
 		
 			</div>
 
