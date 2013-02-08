@@ -66,11 +66,9 @@
 									<a href="<?php echo get_permalink( $person->ID ); ?>">
 
 										<?php
-										$image_attributes = wp_get_attachment_image_src( $person->ID ); // returns an array
+										$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id( $person->ID ), false, ''  ); // returns an array
 										?>
-										<img src="<?php echo $image_attributes[0]; ?>" />
-										<?php echo the_post_thumbnail('large'); ?>xx
-										<?php print_r($image_attributes); ?>
+										[[<img src="<?php echo $image_attributes[0]; ?>" />]]
 
 										<span><?php echo get_the_title( $person->ID ); ?></span>
 
