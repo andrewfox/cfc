@@ -52,7 +52,7 @@
 					<?php the_content(); ?>
 				</div>
 
-						<?php $locations = get_field('post_people');
+						<?php $locations = get_field('post-people');
  x
 						?>
 						<?php if( $locations ): ?>
