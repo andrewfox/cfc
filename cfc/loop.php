@@ -30,14 +30,48 @@
 
 
 			<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
-		
-		
-				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></a></h2>
-		
-		
+
+
+				<?php if ( get_field('post-url') ) { ?>
+
+				<h2 class="entry-title"><a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+					<span class="post-title"><span>globe</span> <?php the_title(); ?></span>
+				</a></h2>
+
+				<?php } else { ?>
+
+				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+					<span class="post-title"><?php the_title(); ?></span>
+				</a></h2>
+
+				<?php } ?>
+
+				<span class="publication-date"><?php the_time('jS F Y') ?></span>
+
+				<?php $posts = get_field('post-people');
+				if( $posts ): ?>
+					<ul class="people-related">
+						<li>
+							<h3>Related barristers</h3>
+						</li>
+					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+						<?php setup_postdata($post); ?>
+						<li>
+							<a href="<?php the_permalink(); ?>">
+								<?php if ( has_post_thumbnail() ) {
+									the_post_thumbnail('medium');
+								} ?>
+								<span><?php the_title(); ?></span>
+							</a>
+						</li>
+					<?php endforeach; ?>
+					</ul>
+					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+				<?php endif; ?>
+
+
 				<div class="entry-content">
-					<?php the_excerpt(); ?>
-					<p class="read-more"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'livework'), the_title_attribute('echo=0') ); ?>" rel="bookmark">Read more &rarr;</a></p>
+					<?php the_content(); ?>
 				</div>
 		
 			</div>
