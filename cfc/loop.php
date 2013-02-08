@@ -70,7 +70,7 @@
 										?>
 										<img src="<?php echo $image_attributes[0]; ?>" alt="Photo: <?php echo get_the_title( $person->ID ); ?>" />
 
-										<span><?php echo get_the_title( $person->ID ); ?></span>
+										<span><?php echo get_the_title( $person->ID ); ?> <?php if( get_field('people-title') ): ?><span><?php the_field('people-title'); ?><?php endif; ?></span>
 
 									</a>
 
