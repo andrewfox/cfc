@@ -67,6 +67,7 @@
 
 										<?php if ( has_post_thumbnail() ) {
 											the_post_thumbnail('large');
+											echo 'pic';
 										} ?>
 
 										<span><?php echo get_the_title( $person->ID ); ?></span>
