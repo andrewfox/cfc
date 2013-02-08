@@ -52,7 +52,6 @@
 					<?php the_content(); ?>
 				</div>
 
-					<?php endif; ?>
 
 
 		
