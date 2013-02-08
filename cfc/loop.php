@@ -53,7 +53,7 @@
 				</div>
 
 						<?php $locations = get_field('post_people');
- 
+ x
 						?>
 						<?php if( $locations ): ?>
 							<ul>
