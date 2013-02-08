@@ -16,10 +16,9 @@
 get_header(); ?>
 
 				<article class="main">
-					<div class="wrapper">
-						<h1 class="page-title">Case News <em>&amp;</em> Press</h1>
-						<p>News, articles, client stories and blog posts.</p>
-					</div>
+
+					<h1 class="page-title">Case News <em>&amp;</em> Press</h1>
+
 
 
 <?php
