@@ -68,7 +68,7 @@
 										<?php
 										$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id( $person->ID ), 'thumbnail', ''  ); // returns an array
 										?>
-										[[<img src="<?php echo $image_attributes[0]; ?>" />]]
+										<img src="<?php echo $image_attributes[0]; ?>" alt="Photo: <?php echo get_the_title( $person->ID ); ?>" />
 
 										<span><?php echo get_the_title( $person->ID ); ?></span>
 
