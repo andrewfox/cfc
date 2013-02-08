@@ -52,29 +52,11 @@
 					<?php the_content(); ?>
 				</div>
 
-				<?php $posts = get_field('post-people');
-				if( $posts ): ?>
-					<ul class="people-related">
-						<li>
-							<h3>Related barristers</h3>
-						</li>
-					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-						<?php setup_postdata($post); ?>
-						<li>
-							<a href="<?php the_permalink(); ?>">
-								<?php if ( has_post_thumbnail() ) {
-									the_post_thumbnail('medium');
-								} ?>
-								<span><?php the_title(); ?></span>
-							</a>
-						</li>
-					<?php endforeach; ?>
-					</ul>
-				<?php endif; ?>
+					<?php endif; ?>
 
 
 		
-			</div>
+			</div><!-- /#post-n -->
 
 
 						
