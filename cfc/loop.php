@@ -59,23 +59,23 @@
 
 								<li><h3>Barristers</h3></li>
 
-							<?php foreach( $people as $person ): ?>
+								<?php foreach( $people as $person ): ?>
 
 								<li>
 
 									<a href="<?php echo get_permalink( $person->ID ); ?>">
 
-										<?php if ( has_post_thumbnail() ) {
-											the_post_thumbnail('large');
-											echo 'pic';
-										} ?>
+										<?php
+										$image_attributes = wp_get_attachment_image_src( $person->ID ); // returns an array
+										?>
+										<img src="<?php echo $image_attributes[0]; ?>" />
 
 										<span><?php echo get_the_title( $person->ID ); ?></span>
 
 									</a>
 
 								</li>
-							<?php endforeach; ?>
+								<?php endforeach; ?>
 							</ul>
 						<?php endif; ?>
  
