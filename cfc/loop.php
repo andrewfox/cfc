@@ -52,15 +52,27 @@
 					<?php the_content(); ?>
 				</div>
 
-						<?php $locations = get_field('post-people'); ?>
-						<?php if( $locations ): ?>
+						<?php $people = get_field('post-people'); ?>
+						<?php if( $people ): ?>
+
 							<ul>
+
 								<li><h3>Barristers</h3></li>
-							<?php foreach( $locations as $location ): ?>
+
+							<?php foreach( $people as $person ): ?>
+
 								<li>
-									<a href="<?php echo get_permalink( $location->ID ); ?>">
-										<?php echo get_the_title( $location->ID ); ?>
+
+									<a href="<?php echo get_permalink( $person->ID ); ?>">
+
+										<?php if ( has_post_thumbnail() ) {
+											the_post_thumbnail('large');
+										} ?>
+
+										<span><?php echo get_the_title( $person->ID ); ?></span>
+
 									</a>
+
 								</li>
 							<?php endforeach; ?>
 							</ul>
