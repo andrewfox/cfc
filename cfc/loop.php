@@ -52,11 +52,10 @@
 					<?php the_content(); ?>
 				</div>
 
-						<?php $locations = get_field('post-people');
- x
-						?>
+						<?php $locations = get_field('post-people'); ?>
 						<?php if( $locations ): ?>
 							<ul>
+								<li><h3>Barristers</h3></li>
 							<?php foreach( $locations as $location ): ?>
 								<li>
 									<a href="<?php echo get_permalink( $location->ID ); ?>">
