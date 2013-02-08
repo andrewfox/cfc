@@ -67,6 +67,7 @@
 
 										<?php
 										$image_attributes = wp_get_attachment_image_src( $person->ID ); // returns an array
+										print_r($image_attributes);
 										?>
 										<img src="<?php echo $image_attributes[0]; ?>" />
 
