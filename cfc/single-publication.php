@@ -24,7 +24,7 @@ get_header(); ?>
 
 			<a href="<?php the_field('publication-file'); ?>" class="publication-image">
 				<?php the_post_thumbnail('medium'); ?>
-				<span class="download">View &lsquo;<?php the_title(); ?>&rsquo;</span>
+				<span class="download">View &lsquo;<?php the_title(); ?> [PDF] &rsquo;</span>
 			</a>
 
 			<?php } ?>
@@ -37,7 +37,7 @@ get_header(); ?>
 
 				<?php the_content(); ?>
 
-				<p><a href="<?php the_field('publication-file'); ?>" class="download">View &lsquo;<?php the_title(); ?>&rsquo;</a></p>
+				<p><a href="<?php the_field('publication-file'); ?>" class="download">View &lsquo;<?php the_title(); ?> [PDF] &rsquo;</a></p>
 
 			</div> <!-- /.entry-content -->
 
