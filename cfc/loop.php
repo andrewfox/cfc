@@ -40,9 +40,10 @@
 
 				<?php } else { ?>
 
-				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+				<h2 class="entry-title">
 					<span class="post-title"><?php the_title(); ?></span>
-				</a></h2>
+					<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">#</a>
+				</h2>
 
 				<?php } ?>
 
