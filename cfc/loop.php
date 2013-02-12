@@ -42,16 +42,24 @@
 
 				<h2 class="entry-title">
 					<span class="post-title"><?php the_title(); ?></span>
-					<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">#</a>
+					<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="permalink">#</a>
 				</h2>
 
 				<?php } ?>
 
 				<p class="publication-date"><?php the_time('jS F Y') ?></p>
 
+				<?php if($post->post_content=="") : ?>
+
+				<!-- No content -->
+
+				<?php else : ?>
+
 				<div class="entry-content">
 					<?php the_content(); ?>
 				</div>
+
+				<?php endif; ?>
 
 						<?php $people = get_field('post-people'); ?>
 						<?php if( $people ): ?>

@@ -546,10 +546,15 @@ a.publication-image {
 }
 .entry-title {
 	margin-bottom: 0.4em;
+	font-size: 1.5em;
+}
+.post-people  {
+	float: left;
 }
 .post-people li {
 	float: left;
 	margin-right: 20px;
+	vertical-align: middle;
 }
 .post-people li img {
 	width: 30px;
@@ -559,7 +564,6 @@ a.publication-image {
 }
 .post-people h3 {
 	text-align: left;
-	
 }
 
 /* === Contact =============================== */
