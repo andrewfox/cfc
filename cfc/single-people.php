@@ -25,21 +25,28 @@ get_header(); ?>
 
 
 
-			<div class="entry-content">
+			<div class="people-content">
 
-				<p class="publication-excerpt"><?php the_excerpt(); ?></p>
 
+				<?php if($post->post_content=="") : ?>
+				<!-- No content -->
+				<?php else : ?>
 				<?php the_content(); ?>
+				<?php endif; ?>
 
+				<?php if (get_field('people-directories_information'): ?>
 				<div class="people-directories_information">
 					<h2>Directories Information</h2>
 					<?php the_field('people-directories_information'); ?>
 				</div>
+				<?php endif; ?>
 
+				<?php if (get_field('people-area_of_practice'): ?>
 				<div class="people-area_of_practice">
 					<h2>Areas of Practice</h2>
 					<?php the_field('people-area_of_practice'); ?>
 				</div>
+				<?php endif; ?>
 
 
 			</div> <!-- /.entry-content -->
