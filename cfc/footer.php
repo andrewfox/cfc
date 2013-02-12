@@ -17,7 +17,7 @@
 
 			<p>&copy; <?php echo date("Y"); ?> <a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			
-			<p class="cookies">This website is using cookies. Find out more in the privacy policy.</p>
+			<p class="cookies">This website is using cookies. Find out more in the <a href="<?php echo get_page_link(298); ?>">Privacy and Cookie Policy</a>.</p>
 			
 		</footer><!-- footer -->
 
