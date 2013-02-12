@@ -47,6 +47,19 @@ get_header(); ?>
 					<p class="email"><a href="mailto:<?php the_field('people-email'); ?>"><span class="ss">email</span> <?php the_field('people-email'); ?></a></p>
 					<?php endif; ?>
 
+					<?php if($post->post_content=="") : ?>
+	
+					<!-- No content -->
+	
+					<?php else : ?>
+	
+					<div class="entry-content">
+						<?php the_content(); ?>
+					</div>
+	
+					<?php endif; ?>
+
+
 				</li>
 
 			<?php endwhile; ?>
