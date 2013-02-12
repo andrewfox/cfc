@@ -540,9 +540,27 @@ a.publication-image {
 
 /* === Case News (blog) =============================== */
 
-
-
-
+.type-post {
+	border-bottom: 1px dotted #ccc;
+	text-align: left;
+}
+.entry-title {
+	margin-bottom: 0.4em;
+}
+.post-people li {
+	float: left;
+	margin-right: 20px;
+}
+.post-people li img {
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	vertical-align: -10px;
+}
+.post-people h3 {
+	text-align: left;
+	
+}
 
 /* === Contact =============================== */
 
