@@ -410,15 +410,11 @@ aside #quote blockquote {
 	clear: both;
 }
 #clerks li {
-	width: 50%;
-	float: left;
-	padding: 0 10px 10px 10px;
+	padding: 0 0 20px 0;
 	box-sizing: border-box;
+	text-align: left;
+	margin-bottom: 20px;
 }
-#clerks li:nth-child(2n+1) {
-	clear: left;
-}
-
 #clerks img {
 	max-width: 100%;
 	height: auto;
@@ -435,6 +431,10 @@ aside #quote blockquote {
 }
 #clerks p span {
 	font-size: 80%;
+}
+#clerks .entry-content {
+	margin: 0.3em 0 0 0;
+	float: none;
 }
 
 
@@ -459,11 +459,11 @@ aside #quote blockquote {
 	transition: all 0.2s linear;
 }
 #publications a:hover img {
-  -webkit-transform: rotate(2deg); 
-     -moz-transform: rotate(2deg); 
-      -ms-transform: rotate(2deg); 
-       -o-transform: rotate(2deg); 
-          transform: rotate(2deg); 
+  -webkit-transform: rotate(-2deg); 
+     -moz-transform: rotate(-2deg); 
+      -ms-transform: rotate(-2deg); 
+       -o-transform: rotate(-2deg); 
+          transform: rotate(-2deg); 
 }
 #publications li {
 	text-align: left;
