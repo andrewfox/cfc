@@ -169,4 +169,13 @@ aside {
 }
 
 
+/* === Case News (blog) =============================== */
 
+.type-post {
+	width: 50%;
+	float: left;
+	padding-right: 20px;
+}
+.type-post:nth-child(2n+1) {
+	clear: both;
+}

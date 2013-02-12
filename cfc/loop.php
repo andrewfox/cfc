@@ -35,14 +35,14 @@
 				<?php if ( get_field('post-url') ) { ?>
 
 				<h2 class="entry-title"><a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-					<span class="post-title"><span>globe</span> <?php the_title(); ?> <span>redirect</span></span>
+					<span class="post-title"><?php the_title(); ?>&nbsp;<span class="ss">redirect</span></span>
 				</a></h2>
 
 				<?php } else { ?>
 
 				<h2 class="entry-title">
 					<span class="post-title"><?php the_title(); ?></span>
-					<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="permalink"> <span>redirect</span></a>
+					<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="permalink">&nbsp;<span class="ss">link</span></a>
 				</h2>
 
 				<?php } ?>
