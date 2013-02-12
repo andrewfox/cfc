@@ -47,7 +47,7 @@
 
 				<?php } ?>
 
-				<span class="publication-date"><?php the_time('jS F Y') ?></span>
+				<p class="publication-date"><?php the_time('jS F Y') ?></p>
 
 				<div class="entry-content">
 					<?php the_content(); ?>
