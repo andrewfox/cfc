@@ -44,7 +44,7 @@ get_header(); ?>
 					<?php endif; ?>
 
 					<?php if( get_field('people-email') ): ?>
-					<p class="email"><span class="ss">email</span> <?php the_field('people-email'); ?></p>
+					<p class="email"><a href="mailto:<?php the_field('people-email'); ?>"><span class="ss">email</span> <?php the_field('people-email'); ?></a></p>
 					<?php endif; ?>
 
 				</li>
