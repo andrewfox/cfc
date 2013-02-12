@@ -56,7 +56,7 @@
 						<?php $people = get_field('post-people'); ?>
 						<?php if( $people ): ?>
 
-							<ul class="people">
+							<ul class="post-people">
 
 								<li><h3>Barristers</h3></li>
 
