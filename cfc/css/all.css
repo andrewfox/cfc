@@ -70,7 +70,7 @@ a {
 	transition: all 0.3s linear;
 }
 a:hover {
-	color: #006c7b;
+	color: #8c992f;
 }
 
 blockquote {
@@ -553,7 +553,8 @@ p.publication-date {
 	margin-bottom: 0.4em;
 }
 .post-people  {
-	float: left;
+	margin-top: 0.3em;
+	font-size: 90%;
 }
 .post-people li {
 	float: left;
@@ -566,8 +567,12 @@ p.publication-date {
 	margin-right: 3px;
 	vertical-align: text-top;
 }
-.post-people h3 {
-	text-align: left;
+.post-title .ss {
+	font-size: 80%;
+}
+.permalink span.ss {
+	font-size: 70%;
+	color: #ccc;
 }
 
 /* === Contact =============================== */
@@ -605,7 +610,8 @@ footer > p {
 .menu-item-11 a,
 .arrow,
 #contact-list span,
-.post-title span {
+.post-title span,
+.ss {
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none;
@@ -624,7 +630,8 @@ footer > p {
 .menu-item-11 a,
 .arrow,
 #contact-list span,
-.post-title span {
+.post-title span,
+.ss {
 	font-family: "SSStandard";
 }
 

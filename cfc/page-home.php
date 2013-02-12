@@ -166,9 +166,9 @@ get_header(); ?>
 
 						<li class="contact-address">
 							<h3>Contact</h3>
-							<p><a href=""><span>telephone</span> 020 7710 6444</a></p>
-							<p><a href=""><span>email</span> senior clerk</a></p>
-							<p><a href=""><span>email</span> office manager</a></p>
+							<p><a href=""><span class="ss">telephone</span> 020 7710 6444</a></p>
+							<p><a href=""><span class="ss">email</span> senior clerk</a></p>
+							<p><a href=""><span class="ss">email</span> office manager</a></p>
 						</li>
 
 					</ul>

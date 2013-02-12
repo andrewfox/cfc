@@ -30,12 +30,23 @@ get_header(); ?>
 			while(have_posts()) : the_post();  ?>
 
 				<li <?php post_class(); ?>>
-					<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-						<?php if(has_post_thumbnail()) :
+					<?php if(has_post_thumbnail()) :
 						the_post_thumbnail('thumbnail'); 
-						endif;?>
-						<span><?php the_title(); ?> <?php if( get_field('people-title') ): ?><span><?php the_field('people-title'); ?><?php endif; ?></span></span>
-					</a>
+					endif;?>
+					<h3><?php the_title(); ?> <?php if( get_field('people-title') ): ?><span><?php the_field('people-title'); ?><?php endif; ?></span></h3>
+
+					<?php if( get_field('people-telephone') ): ?>
+					<p class="telephone"><span class="ss">telephone</span> <?php the_field('people-telephone'); ?></p>
+					<?php endif; ?>
+
+					<?php if( get_field('people-telephone2') ): ?>
+					<p class="telephone2"><span class="ss">telephone</span> out-of-hours <?php the_field('people-telephone2'); ?></p>
+					<?php endif; ?>
+
+					<?php if( get_field('people-email') ): ?>
+					<p class="email"><span class="ss">email</span> <?php the_field('people-email'); ?></p>
+					<?php endif; ?>
+
 				</li>
 
 			<?php endwhile; ?>
