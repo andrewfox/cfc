@@ -323,12 +323,17 @@ aside #quote blockquote {
 
 .column {
 	text-align: left;
-	padding: 20px 0 0 0;
+	padding: 20px 0 15px 0;
 	box-sizing: border-box;
+	border-bottom: 1px dotted #ccc;
+}
+.column:nth-child(3) {
+	border-bottom: none;
 }
 
 .column h2 {
 	font-size: 130%;
+	margin-top: 0;
 }
 .column h3 {
 	font-size: 120%;
