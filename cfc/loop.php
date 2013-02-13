@@ -32,13 +32,13 @@
 			<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
 
-				<?php if ( get_field('post-url') ) { ?>
+				<?php if ( get_field('post-url') ) { // if is a link to a website ?>
 
 				<h2 class="entry-title"><a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 					<span class="post-title"><?php the_title(); ?>&nbsp;<span class="ss">redirect</span></span>
 				</a></h2>
 
-				<?php } else { ?>
+				<?php } else { // if is basically a statement ?>
 
 				<h2 class="entry-title">
 					<span class="post-title"><?php the_title(); ?></span>

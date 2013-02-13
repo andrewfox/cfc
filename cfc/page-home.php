@@ -104,34 +104,35 @@ get_header(); ?>
 		
 						<li <?php post_class(); ?>>
 
-							<?php if ( get_field('post-url') ) { ?>
+							<?php if ( get_field('post-url') ) { // if is a link to a website ?>
+			
+							<h2 class="entry-title"><a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+								<span class="post-title"><?php the_title(); ?>&nbsp;<span class="ss">redirect</span></span>
+							</a></h2>
 
-							<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-								<span class="post-title"><span>globe</span> <?php the_title(); ?></span>
-							</a>
+							<?php } else { // if is basically a statement ?>
 
-							<?php } else { ?>
-
-							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+							<h2 class="entry-title">
 								<span class="post-title"><?php the_title(); ?></span>
-							</a>
+								<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="permalink">&nbsp;<span class="ss">link</span></a>
+							</h2>
 
 							<?php } ?>
 
-								<span class="publication-date"><?php the_time('F Y') ?></span>
+							<span class="publication-date"><?php the_time('F Y') ?></span>
 
-								<?php $posts = get_field('post-people');
-								if( $posts ): ?>
-									<ul class="post-people">
-									<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-										<?php setup_postdata($post); ?>
-									    <li>
-									    	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-									    </li>
-									<?php endforeach; ?>
-									</ul>
-									<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-								<?php endif; ?>
+							<?php $posts = get_field('post-people');
+							if( $posts ): ?>
+								<ul class="post-people">
+								<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+									<?php setup_postdata($post); ?>
+								    <li>
+								    	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								    </li>
+								<?php endforeach; ?>
+								</ul>
+								<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+							<?php endif; ?>
  
 
 						</li>

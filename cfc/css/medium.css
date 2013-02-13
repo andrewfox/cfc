@@ -69,6 +69,12 @@ aside {
 	padding: 20px 30px 20px 0;
 }
 
+/* === Homepage (specifics) =============================== */
+
+.home .type-post {
+	width: auto;
+	padding: 0;
+}
 
 /* === People =============================== */
 #people {
