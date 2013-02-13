@@ -349,17 +349,23 @@ aside #quote blockquote {
 	margin: 0;
 }
 
-.contact-newsletter .news-email {
-	font-family: 'Johnston ITC W01', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+.news-email {
+	font-family: 'Johnston ITC W01 Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
 	background: transparent;
 	border: none;
 	border-bottom: 1px solid #777;
 	width: 70%;
 }
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+	font-family: 'JohnstonITCW01-LightIta', 'HelveticaNeue-Italic', 'Helvetica Neue Italic', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+	color: #c00;
+}
 .contact-newsletter .news-submit {
 	border: none;
 	background: transparent;
-	width: 20%;
 }
 
 
