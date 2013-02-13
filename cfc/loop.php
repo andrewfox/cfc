@@ -66,7 +66,7 @@
 
 							<ul class="post-people">
 
-								<li>Barristers:</li>
+								<!-- <li>Barristers:</li> -->
 
 								<?php foreach( $people as $person ): ?>
 
