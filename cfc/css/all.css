@@ -355,6 +355,7 @@ aside #quote blockquote {
 	border: none;
 	border-bottom: 1px solid #777;
 	width: 70%;
+	padding: 2px 0;
 }
 ::-webkit-input-placeholder,
 :-moz-placeholder,
@@ -363,9 +364,13 @@ aside #quote blockquote {
 	font-family: 'JohnstonITCW01-LightIta', 'HelveticaNeue-Italic', 'Helvetica Neue Italic', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
 	color: #c00;
 }
-.contact-newsletter .news-submit {
+.news-submit {
 	border: none;
 	background: transparent;
+	padding: 2px;
+}
+.news-submit:hover {
+	color: #8c992f;
 }
 
 

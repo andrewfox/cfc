@@ -164,7 +164,7 @@ get_header(); ?>
 						</li>
 
 						<li class="contact-address">
-							<h3><span>location</span> Address</h3>
+							<h3>Address</h3>
 							<p>39-40 Cloth Fair,</p>
 							<p>London</p>
 							<p>EC1A 7NT</p>
