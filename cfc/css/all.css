@@ -590,7 +590,10 @@ a.publication-image {
 
 /* === Homepage (specifics) =============================== */
 
-
+.home .type-post {
+	border: none;
+	clear: left;
+}
 
 
 /* === Case News (blog) =============================== */

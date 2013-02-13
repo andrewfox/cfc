@@ -113,8 +113,12 @@ get_header(); ?>
 							<?php } else { // if is basically a statement ?>
 
 							<h2 class="entry-title">
-								<span class="post-title"><?php the_title(); ?></span>
-								<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="permalink ss">&nbsp;link</a>
+								<span class="post-title">
+									<?php the_title(); ?>
+									<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="permalink">
+										&nbsp;<span class="ss">link</span>
+									</a>
+								</span>
 							</h2>
 
 							<?php } ?>
