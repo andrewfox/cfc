@@ -231,6 +231,9 @@ h1.page-title {
 .main .wp-post-image {
 	max-width: 100%;
 	height: auto;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .entry-content {
@@ -644,7 +647,6 @@ a.publication-image {
 /* === Case News (blog) =============================== */
 
 .type-post {
-	border-top: 1px dotted #ccc;
 	text-align: left;
 	box-sizing: border-box;
 }
