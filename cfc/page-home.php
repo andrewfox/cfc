@@ -17,15 +17,17 @@ get_header(); ?>
 		<article id="page-<?php the_ID(); ?>" class="main clearfix">
 
 
+
 			<?php if ( has_post_thumbnail() ) {
 				the_post_thumbnail('large');
 			} ?>
+
 
 			<div class="entry-content">
 				<?php the_content(); ?>
 			</div><!-- .entry-content -->
 
-			
+
 			<div id="people-slideshow">
 				<ul id="people" class="slideshow clearfix">
 	
