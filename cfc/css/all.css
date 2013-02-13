@@ -349,6 +349,19 @@ aside #quote blockquote {
 	margin: 0;
 }
 
+.contact-newsletter .news-email {
+	font-family: 'Johnston ITC W01', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #777;
+	width: 70%;
+}
+.contact-newsletter .news-submit {
+	border: none;
+	background: transparent;
+	width: 20%;
+}
+
 
 
 

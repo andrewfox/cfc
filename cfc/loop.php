@@ -107,8 +107,8 @@
 	<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 
 			<nav class="page-navigation">
-				<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older', 'livework' ) ); ?></div>
-				<div class="nav-next"><?php previous_posts_link( __( 'Newer<span class="meta-nav">&rarr;</span>', 'livework' ) ); ?></div>
+				<div class="nav-previous"><?php next_posts_link( __( '<span class="ss">previous</span> Older', 'cfc' ) ); ?></div>
+				<div class="nav-next"><?php previous_posts_link( __( 'Newer <span class="ss">next</span>', 'cfc' ) ); ?></div>
 			</nav><!-- #nav-above -->
 
 	<?php endif; ?>
