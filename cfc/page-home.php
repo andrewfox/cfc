@@ -114,7 +114,7 @@ get_header(); ?>
 
 							<h2 class="entry-title">
 								<span class="post-title"><?php the_title(); ?></span>
-								<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="permalink">&nbsp;<span class="ss">link</span></a>
+								<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="permalink ss">&nbsp;link</a>
 							</h2>
 
 							<?php } ?>
@@ -132,7 +132,7 @@ get_header(); ?>
 										<?php if ( has_post_thumbnail() ) {
 											the_post_thumbnail('large');
 										} ?>
-										<span><?php the_title(); ?><?php if( get_field('people-title') ): ?><span><?php the_field('people-title'); ?></span><?php endif; ?></span>
+										<span><?php the_title(); ?><?php if( get_field('people-title') ): ?> <span><?php the_field('people-title'); ?></span><?php endif; ?></span>
 										</a>
 									</li>
 								<?php endforeach; ?>
