@@ -160,7 +160,7 @@ get_header(); ?>
 
 						<li class="contact-newsletter">
 							<h3>Sign-up to the newsletter</h3>
-							<p><input type="text" /> <input type="submit"/></p>
+							<p><input type="text" class="news-email" name="news-email" placeholder="your email" /><input type="submit" class="news-submit" name="news-submit" /></p>
 						</li>
 
 						<li class="contact-address">
