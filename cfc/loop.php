@@ -42,10 +42,7 @@
 
 				<h2 class="entry-title">
 					<span class="post-title">
-						<?php the_title(); ?>
-						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="permalink">
-							&nbsp;<span class="ss">link</span>
-						</a>
+						<?php the_title(); ?>&nbsp;<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="permalink"><span class="ss">link</span></a>
 					</span>
 				</h2>
 
