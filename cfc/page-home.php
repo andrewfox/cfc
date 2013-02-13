@@ -121,19 +121,24 @@ get_header(); ?>
 
 							<span class="publication-date"><?php the_time('F Y') ?></span>
 
-							<?php $posts = get_field('post-people');
+							<?php // list of related people
+							$posts = get_field('post-people');
 							if( $posts ): ?>
 								<ul class="post-people">
 								<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 									<?php setup_postdata($post); ?>
-								    <li>
-								    	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								    </li>
+									<li>
+										<a href="<?php the_permalink(); ?>">
+										<?php if ( has_post_thumbnail() ) {
+											the_post_thumbnail('large');
+										} ?>
+										<span><?php the_title(); ?><?php if( get_field('people-title') ): ?><span><?php the_field('people-title'); ?></span><?php endif; ?></span>
+										</a>
+									</li>
 								<?php endforeach; ?>
 								</ul>
 								<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 							<?php endif; ?>
- 
 
 						</li>
 	
