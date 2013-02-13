@@ -31,6 +31,7 @@ h1 {
 h2 {
 	font-size: 2em;
 	line-height: 1.25em;
+	margin: 1em 0 0.5em 0;
 }
 h3 {
 	font-size: 1.4em;
@@ -322,7 +323,7 @@ aside #quote blockquote {
 
 .column {
 	text-align: left;
-	padding: 20px 30px 20px 0;
+	padding: 20px 0 0 0;
 	box-sizing: border-box;
 }
 
@@ -437,7 +438,7 @@ aside #quote blockquote {
 
 #publications {
 	clear: both;
-	margin: 0 -10px 2em -10px;
+	margin: 0 -10px 0 -10px;
 }
 #publications a img {
 	max-width: 30%;
@@ -481,6 +482,32 @@ aside #quote blockquote {
 }
 .publication-date {
 	font-size: 90%;
+}
+
+/*Home specifics*/
+
+.home #publications a img {
+	max-width: 100%;
+	margin: 0 20px 10px 0;
+	box-shadow: 0 1px 10px #c6c6c6;
+	-moz-box-shadow: 0 1px 10px #c6c6c6;
+	-webkit-box-shadow: 0 1px 10px #c6c6c6;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.home #publications li {
+	width: 50%;
+	float: left;
+	clear: none;
+	padding: 0 30px 10px 10px;
+	margin-bottom: 0;
+}
+.home #publications .publication-title {
+	font-size: 110%;
+	clear: left;
 }
 
 /* === Single Publication =============================== */
@@ -582,10 +609,7 @@ a.publication-image {
 
 /* === Homepage (specifics) =============================== */
 
-.home .type-post {
-	border: none;
-	clear: left;
-}
+
 
 
 /* === Case News (blog) =============================== */
@@ -623,6 +647,24 @@ p.publication-date {
 .permalink span.ss {
 	font-size: 70%;
 	color: #ccc;
+}
+
+/*Home specifics*/
+
+.home .type-post {
+	border: none;
+	clear: both;
+	padding: 0 20px 20px 0;
+}
+.home .type-post h2 {
+	margin: 0;
+}
+
+.home ul#news-list {
+	margin: 0;
+}
+.home ul#news-list li {
+	clear: both;
 }
 
 /* === Contact =============================== */

@@ -67,14 +67,12 @@ aside {
 	width: 33%;
 	float: left;
 	padding: 20px 30px 20px 0;
+	border-bottom: none;
 }
 
 /* === Homepage (specifics) =============================== */
 
-.home .type-post {
-	width: auto;
-	padding: 0;
-}
+
 
 /* === People =============================== */
 #people {
@@ -168,6 +166,24 @@ aside {
 	clear: left;
 }
 
+/*Home specifics*/
+
+
+.home #publications li {
+	width: 100%;
+	float: none;
+	clear: none;
+	padding: 0 30px 30px 10px;
+}
+.home #publications a img {
+	max-width: 75%;
+	margin: 0 20px 10px 0;
+}
+.home #publications .publication-title {
+	font-size: 110%;
+	clear: left;
+}
+
 /* === Single Publication =============================== */
 
 .publication-image {
@@ -212,4 +228,9 @@ aside {
 }
 .type-post:nth-child(2n+2) {
 	clear: left;
+}
+
+.home .type-post {
+	width: auto;
+	padding: 0;
 }

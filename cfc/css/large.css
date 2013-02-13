@@ -20,3 +20,26 @@
 #people li:nth-child(4n+1) {
 	clear: left;
 }
+
+
+
+/* === Publications =============================== */
+
+
+/*Home specifics*/
+
+.home #publications a img {
+	max-width: 100%;
+	margin: 0 20px 10px 0;
+	float: left;
+}
+.home #publications li {
+	width: 50%;
+	float: left;
+	clear: none;
+	padding: 0 30px 10px 10px;
+}
+.home #publications .publication-title {
+	font-size: 110%;
+	clear: left;
+}
