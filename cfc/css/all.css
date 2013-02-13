@@ -530,7 +530,7 @@ a.publication-image {
 
 /* === Single People =============================== */
 
-.single-people img {
+.single-people .wp-post-image {
 	width: 60%;
 	max-width: 100%;
 	height: auto;

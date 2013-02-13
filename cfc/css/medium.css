@@ -181,6 +181,21 @@ aside {
 	width: 50%;
 }
 
+/* === Single People =============================== */
+
+.single-people .wp-post-image {
+	float: left;
+	width: 25%;
+}
+.people-content {
+	text-align: left;
+	margin-left: 25%;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.people-content h2 {
+	text-align: left;
+}
 
 /* === Case News (blog) =============================== */
 
