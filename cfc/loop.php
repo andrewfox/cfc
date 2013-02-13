@@ -61,32 +61,33 @@
 
 				<?php endif; ?>
 
-						<?php $people = get_field('post-people'); ?>
-						<?php if( $people ): ?>
+				<?php // list of related people
+				$people = get_field('post-people');
+				if( $people ): ?>
 
-							<ul class="post-people">
+				<ul class="post-people">
 
-								<!-- <li>Barristers:</li> -->
+					<!-- <li>Barristers:</li> -->
 
-								<?php foreach( $people as $person ): ?>
+					<?php foreach( $people as $person ): ?>
 
-								<li>
+					<li>
 
-									<a href="<?php echo get_permalink( $person->ID ); ?>">
+						<a href="<?php echo get_permalink( $person->ID ); ?>">
 
-										<?php
-										$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id( $person->ID ), 'thumbnail', ''  ); // returns an array
-										?>
-										<img src="<?php echo $image_attributes[0]; ?>" alt="Photo: <?php echo get_the_title( $person->ID ); ?>" />
+							<?php
+							$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id( $person->ID ), 'thumbnail', ''  ); // returns an array
+							?>
+							<img src="<?php echo $image_attributes[0]; ?>" alt="Photo: <?php echo get_the_title( $person->ID ); ?>" />
 
-										<span><?php echo get_the_title( $person->ID ); ?> <?php if( get_field('people-title', $person->ID) ): ?><span><?php the_field('people-title', $person->ID ); ?><?php endif; ?></span>
+							<span><?php echo get_the_title( $person->ID ); ?> <?php if( get_field('people-title', $person->ID) ): ?><span><?php the_field('people-title', $person->ID ); ?><?php endif; ?></span>
 
-									</a>
+						</a>
 
-								</li>
-								<?php endforeach; ?>
-							</ul>
-						<?php endif; ?>
+					</li>
+					<?php endforeach; ?>
+				</ul>
+				<?php endif; ?>
  
 
 			</div><!-- /#post-n -->
