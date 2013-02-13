@@ -339,11 +339,6 @@ aside #quote blockquote {
 	font-weight: normal;
 	font-size: 110%;
 }
-#news-list .post-title span {
-	color: #8c1c6b;
-	font-size: 80%;
-}
-
 #contact-list p {
 	margin: 0;
 }
