@@ -122,7 +122,7 @@ get_header(); ?>
 
 								<?php $posts = get_field('post-people');
 								if( $posts ): ?>
-									<ul>
+									<ul class="post-people">
 									<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 										<?php setup_postdata($post); ?>
 									    <li>
