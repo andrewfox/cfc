@@ -32,18 +32,29 @@
 			<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
 
+<<<<<<< HEAD
 				<?php if ( get_field('post-url') ) { // if is a link to a website ?>
+=======
+				<?php if ( get_field('post-url') ) { // external link ?>
+>>>>>>> Loop: changing link
 
 				<h2 class="entry-title"><a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 					<span class="post-title"><?php the_title(); ?>&nbsp;<span class="ss">redirect</span></span>
 				</a></h2>
 
+<<<<<<< HEAD
 				<?php } else { // if is basically a statement ?>
 
 				<h2 class="entry-title">
 					<span class="post-title">
 						<?php the_title(); ?>&nbsp;<a href="<?php the_permalink(); ?>" title="Permanent link" rel="bookmark" class="permalink"><span class="ss">link</span></a>
 					</span>
+=======
+				<?php } else { // no link ?>
+
+				<h2 class="entry-title">
+					<?php the_title(); ?>
+>>>>>>> Loop: changing link
 				</h2>
 
 				<?php } ?>
