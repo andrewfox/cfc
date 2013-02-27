@@ -94,8 +94,19 @@ q:before {
 /* === General (used in multiple situations) =============================== */
 
 
+.page-navigation {
+	clear: both;
+}
+.nav-next span,.nav-previous span {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: red;
+	border-radius: 20px;
+}
 .nav-next {
 	float: right;
+	
 }
 .nav-previous {
 	float: left;
