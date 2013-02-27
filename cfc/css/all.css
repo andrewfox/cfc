@@ -97,13 +97,17 @@ q:before {
 .page-navigation {
 	clear: both;
 }
-.nav-next span,.nav-previous span {
+.nav-next span, .nav-previous span {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: red;
 	border-radius: 20px;
+	padding: 9px;
+	border: 1px solid #8c992f;
+	box-sizing: border-box;
+	margin-bottom: 2px;
 }
+
 .nav-next {
 	float: right;
 	
