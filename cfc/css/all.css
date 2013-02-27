@@ -253,12 +253,14 @@ h1.page-title {
 	font-weight: normal;
 	margin: 0 -10px 2em -10px;
 	max-width: 960px;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 #page-images li {
 	width: 25%;
 	float: left;
 	padding: 0 10px 10px 10px;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 #page-images img {
@@ -313,6 +315,7 @@ aside #quote blockquote {
 	padding: 20px;
 	color: white;
 	margin: 3px 0;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: #0f4752;
 }
@@ -332,6 +335,7 @@ aside #quote blockquote {
 .column {
 	text-align: left;
 	padding: 20px 0 15px 0;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border-bottom: 1px dotted #ccc;
 }
@@ -396,6 +400,7 @@ aside #quote blockquote {
 	width: 50%;
 	float: left;
 	padding: 0 10px 10px 10px;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 #people li:nth-child(2n+1) {
@@ -427,6 +432,7 @@ aside #quote blockquote {
 #people.slideshow {
 	margin: 0;
 	padding: 20px 0;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 #people-slideshow a {
@@ -443,6 +449,7 @@ aside #quote blockquote {
 }
 #clerks li {
 	padding: 0 0 20px 0;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	text-align: left;
 	margin-bottom: 20px;
@@ -501,6 +508,7 @@ aside #quote blockquote {
 	text-align: left;
 	display: block;
 	padding: 0 10px 10px 10px;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 #publications li {
@@ -610,6 +618,7 @@ a.publication-image {
 	max-width: 70%;
 	height: auto;
 	-moz-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0 0 1em 0;
 }
@@ -619,6 +628,7 @@ a.publication-image {
 	padding: 0 10px 0 0;
 	margin: 0;
 	position: relative;
+	-moz-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -653,6 +663,7 @@ a.publication-image {
 
 .type-post {
 	text-align: left;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 .entry-title {
