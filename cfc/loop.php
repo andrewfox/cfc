@@ -32,29 +32,17 @@
 			<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
 
-<<<<<<< HEAD
-				<?php if ( get_field('post-url') ) { // if is a link to a website ?>
-=======
-				<?php if ( get_field('post-url') ) { // external link ?>
->>>>>>> Loop: changing link
+				<?php if ( get_field('post-url') ) { ?>
 
 				<h2 class="entry-title"><a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 					<span class="post-title"><?php the_title(); ?>&nbsp;<span class="ss">redirect</span></span>
 				</a></h2>
 
-<<<<<<< HEAD
-				<?php } else { // if is basically a statement ?>
+				<?php } else { ?>
 
 				<h2 class="entry-title">
-					<span class="post-title">
-						<?php the_title(); ?>&nbsp;<a href="<?php the_permalink(); ?>" title="Permanent link" rel="bookmark" class="permalink"><span class="ss">link</span></a>
-					</span>
-=======
-				<?php } else { // no link ?>
-
-				<h2 class="entry-title">
-					<?php the_title(); ?>
->>>>>>> Loop: changing link
+					<span class="post-title"><?php the_title(); ?></span>
+					<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="permalink">&nbsp;<span class="ss">link</span></a>
 				</h2>
 
 				<?php } ?>
@@ -73,33 +61,32 @@
 
 				<?php endif; ?>
 
-				<?php // list of related people
-				$people = get_field('post-people');
-				if( $people ): ?>
+						<?php $people = get_field('post-people'); ?>
+						<?php if( $people ): ?>
 
-				<ul class="post-people">
+							<ul class="post-people">
 
-					<!-- <li>Barristers:</li> -->
+								<li>Barristers:</li>
 
-					<?php foreach( $people as $person ): ?>
+								<?php foreach( $people as $person ): ?>
 
-					<li>
+								<li>
 
-						<a href="<?php echo get_permalink( $person->ID ); ?>">
+									<a href="<?php echo get_permalink( $person->ID ); ?>">
 
-							<?php
-							$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id( $person->ID ), 'thumbnail', ''  ); // returns an array
-							?>
-							<img src="<?php echo $image_attributes[0]; ?>" alt="Photo: <?php echo get_the_title( $person->ID ); ?>" />
+										<?php
+										$image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id( $person->ID ), 'thumbnail', ''  ); // returns an array
+										?>
+										<img src="<?php echo $image_attributes[0]; ?>" alt="Photo: <?php echo get_the_title( $person->ID ); ?>" />
 
-							<span><?php echo get_the_title( $person->ID ); ?> <?php if( get_field('people-title', $person->ID) ): ?><span><?php the_field('people-title', $person->ID ); ?><?php endif; ?></span>
+										<span><?php echo get_the_title( $person->ID ); ?> <?php if( get_field('people-title', $person->ID) ): ?><span><?php the_field('people-title', $person->ID ); ?><?php endif; ?></span>
 
-						</a>
+									</a>
 
-					</li>
-					<?php endforeach; ?>
-				</ul>
-				<?php endif; ?>
+								</li>
+								<?php endforeach; ?>
+							</ul>
+						<?php endif; ?>
  
 
 			</div><!-- /#post-n -->
@@ -118,8 +105,8 @@
 	<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 
 			<nav class="page-navigation">
-				<div class="nav-previous"><?php next_posts_link( __( '<span class="ss">previous</span> Older', 'cfc' ) ); ?></div>
-				<div class="nav-next"><?php previous_posts_link( __( 'Newer <span class="ss">next</span>', 'cfc' ) ); ?></div>
+				<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older', 'livework' ) ); ?></div>
+				<div class="nav-next"><?php previous_posts_link( __( 'Newer<span class="meta-nav">&rarr;</span>', 'livework' ) ); ?></div>
 			</nav><!-- #nav-above -->
 
 	<?php endif; ?>
