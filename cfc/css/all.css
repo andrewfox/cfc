@@ -225,7 +225,9 @@ article.main {
 
 h1.page-title {
 	font-size: 34px;
-	margin: 0.5em 0;
+	margin: 0.2em 0;
+	padding: 0.2em 0 0;
+	border-top: 1px dotted #ccc;
 }
 
 .main .wp-post-image {
@@ -653,6 +655,9 @@ a.publication-image {
 .entry-title {
 	margin-bottom: 0.4em;
 	font-size: 1.5em;
+}
+.category-short .entry-title{
+	color: #777;
 }
 p.publication-date {
 	margin-bottom: 0.4em;

@@ -32,16 +32,26 @@
 			<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
 
-				<?php if ( get_field('post-url') ) { ?>
-
-				<h2 class="entry-title"><a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-					<span class="post-title"><?php the_title(); ?>&nbsp;<span class="ss">redirect</span></span>
-				</a></h2>
-
-				<?php } else { ?>
+				<?php if ( get_field('post-url') ) { // external link ?>
 
 				<h2 class="entry-title">
+					<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+						<span class="post-title"><?php the_title(); ?>&nbsp;<span class="ss">redirect</span></span>
+					</a>
+				</h2>
+
+				<?php } elseif ( in_category('4') ) { // short ?> 
+				
+				<h2 class="entry-title">
 					<?php the_title(); ?>
+				</h2>
+
+				<?php } else { // regular ?> 
+
+				<h2 class="entry-title">
+					<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+						<?php the_title(); ?>
+					</a>
 				</h2>
 
 				<?php } ?>
