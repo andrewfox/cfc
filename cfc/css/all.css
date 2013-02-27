@@ -206,12 +206,12 @@ header h1 a img {
 .menu li a:hover,
 .menu li.current_page_item a:hover,
 .menu li.current-page-ancestor a:hover {
-	color: #222;
+	color: #8c992f;
 }
 
 .menu li.current_page_item a,
 .menu li.current-page-ancestor a {
-	color: #222;
+	color: #8c992f;
 }
 
 
