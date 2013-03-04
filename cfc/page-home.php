@@ -97,7 +97,7 @@ get_header(); ?>
 
 				<div class="column">
 
-					<h2><a href="<?php echo get_page_link(8); ?>">Case News <em>&amp;</em> Press</a></h2>
+					<h2><a href="<?php echo get_page_link(8); ?>">Case News &amp; Press</a></h2>
 	
 					<ul id="news-list" class="clearfix">
 	
@@ -106,18 +106,26 @@ get_header(); ?>
 		
 						<li <?php post_class(); ?>>
 
-							<?php if ( get_field('post-url') ) { // if is a link to a website ?>
-			
-							<h2 class="entry-title"><a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-								<span class="post-title"><?php the_title(); ?>&nbsp;<span class="ss">redirect</span></span>
-							</a></h2>
-
-							<?php } else { // if is basically a statement ?>
+							<?php if ( get_field('post-url') ) { // external link ?>
 
 							<h2 class="entry-title">
-								<span class="post-title">
-									<?php the_title(); ?>&nbsp;<a href="<?php the_permalink(); ?>" title="Permanent link" rel="bookmark" class="permalink"><span class="ss">link</span></a>
-								</span>
+								<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+									<span class="post-title"><?php the_title(); ?>&nbsp;<span class="ss">redirect</span></span>
+								</a>
+							</h2>
+
+							<?php } elseif ( in_category('4') ) { // short ?> 
+							
+							<h2 class="entry-title">
+								<?php the_title(); ?>
+							</h2>
+
+							<?php } else { // regular ?> 
+
+							<h2 class="entry-title">
+								<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+									<?php the_title(); ?>
+								</a>
 							</h2>
 
 							<?php } ?>

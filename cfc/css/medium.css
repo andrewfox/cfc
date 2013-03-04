@@ -91,7 +91,7 @@ aside {
 /* People slideshow on homepage */
 
 #people-slideshow {
-	padding: 40px;
+	padding: 40px 40px 0 40px;
 	overflow: hidden;
 }
 #people.slideshow {
@@ -108,9 +108,11 @@ aside {
 #people.slideshow li.off {
 	display: none;
 }
-#people.slideshow li.more {
-	margin-top: 2em;
-	font-style: italic;
+#people.slideshow li.more a {
+	padding-top: 4em;
+	width: 100%;
+	height: 100%;
+	display: block;
 }
 
 /* Arrows (show if JS is on) */
