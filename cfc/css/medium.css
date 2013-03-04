@@ -229,10 +229,18 @@ aside {
 	padding: 0 20px 20px 0;
 	border-top: 1px dotted #ccc;
 }
+
 .type-post:nth-child(2n+2) {
 	clear: left;
 }
-
+.type-post:nth-child(1) {
+	border-top: none;
+	background: red;
+}
+.type-post:nth-child(0) {
+	border-top: none;
+	background: red;
+}
 .home .type-post {
 	width: auto;
 	padding: 0;
