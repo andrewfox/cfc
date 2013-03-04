@@ -327,12 +327,13 @@ aside #quote blockquote {
 
 .home .entry-content {
 	width: 100%;
-	padding: 20px;
+	padding: 20px 100px 20px 20px;
 	color: white;
 	margin: 3px 0;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: #0f4752;
+	font-size: 90%;
 }
 .home .entry-content h2 {
 	text-shadow: none;
