@@ -17,7 +17,7 @@ get_header(); ?>
 
 				<article class="main">
 
-					<h1 class="page-title">Case News <em>&amp;</em> Press</h1>
+					<h1 class="page-title">Case News &amp; Press</h1>
 
 
 
