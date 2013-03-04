@@ -19,9 +19,18 @@ get_header(); ?>
 
 			<h1 class="page-title"><?php the_title(); ?></h1>
 
+
+
+			<?php if($post->post_content=="") : ?>
+			<!-- No content -->
+			<?php else : ?>
 			<div class="entry-content">
+
 				<?php the_content(); ?>
+
 			</div><!-- .entry-content -->
+			<?php endif; ?>
+
 
 
 			<ul id="people" class="clearfix">
