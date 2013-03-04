@@ -31,7 +31,7 @@ get_header(); ?>
 			<div id="people-slideshow">
 				<ul id="people" class="slideshow clearfix">
 	
-				<?php query_posts(array('post_type' => 'people', 'category_name' => 'barrister', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged));
+				<?php query_posts(array('post_type' => 'people', 'category_name' => 'barrister', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'date', 'paged'=> $paged));
 				while(have_posts()) : the_post();  ?>
 	
 					<li <?php post_class(); ?>>
@@ -53,8 +53,8 @@ get_header(); ?>
 	
 				</ul>
 
-				<div class="arrow back off">back</div>
-				<div class="arrow forward">forward</div>
+				<div class="ss arrow back off">back</div>
+				<div class="ss arrow forward">forward</div>
 
 			</div><!-- /.people-slideshow -->
 
