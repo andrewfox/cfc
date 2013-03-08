@@ -50,7 +50,6 @@ h1.page-title {
 	margin: 1em 0;
 	text-align: left;
 	float: left;
-	width: 73%;
 }
 
 /* === Aside =============================== */
@@ -146,14 +145,12 @@ aside {
 
 
 #clerks li {
-	width: 50%;
+	width: 33%;
 	float: left;
-	padding: 0 30px 30px 0;
+	padding: 0 20px 30px 0;
+	margin: auto 0;
+	text-align: left;
 }
-#clerks li:nth-child(2n+1) {
-	clear: left;
-}
-
 
 /* === Publications =============================== */
 

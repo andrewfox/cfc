@@ -259,7 +259,6 @@ h1.page-title {
 
 .entry-content {
 	margin: 1em 0;
-	text-align: left;
 }
 
 /*Row of four images at bottom of Pages*/
@@ -462,6 +461,8 @@ aside #quote blockquote {
 /* === Clerks =============================== */
 
 #clerks {
+	margin: 0;
+	padding: 0;
 	clear: both;
 }
 #clerks li {
@@ -470,6 +471,7 @@ aside #quote blockquote {
 	box-sizing: border-box;
 	text-align: left;
 	margin-bottom: 20px;
+	text-align: center;
 }
 #clerks img {
 	max-width: 100%;
@@ -489,7 +491,7 @@ aside #quote blockquote {
 	font-size: 80%;
 }
 #clerks .entry-content {
-	margin: 0.3em 0 0 0;
+	margin: 0.5em 0 0 0;
 	float: none;
 }
 
