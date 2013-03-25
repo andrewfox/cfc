@@ -426,6 +426,7 @@ aside #quote blockquote {
 #people img {
 	max-width: 100%;
 	height: auto;
+	padding-bottom: 0.3em;
 }
 #people li >span {
 	display: block;
