@@ -33,8 +33,8 @@ get_header(); ?>
 
 			<div class="entry-content">
 
-				<p class="publication-excerpt"><?php the_excerpt(); ?></p>
-
+				<h3>Excerpt:</h3>
+				
 				<?php the_content(); ?>
 
 				<p><a href="<?php the_field('publication-file'); ?>" class="download">View &lsquo;<?php the_title(); ?> [PDF] &rsquo;</a></p>
