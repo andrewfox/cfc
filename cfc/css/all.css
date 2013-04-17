@@ -410,18 +410,27 @@ aside #quote blockquote {
 	clear: both;
 	font-family: 'AdobeCaslonW01-Regular';
 	font-weight: normal;
-	margin: 0 -10px 2em -10px;
 	text-align: center;
+	/*background: blue;*/
+	overflow: hidden;
+	margin: 0 -10px;
+	padding: 0;
 }
 #people ul {
-	margin: 0 -10px 2em -10px;
+	margin: 0;
+	padding: 0;
+	/*background: red;*/
+	display: table;
 }
 #people li {
 	width: 50%;
-	
-	padding: 0 10px 10px 10px;
+	display: inline-block;
+	padding: 0 10px 20px;
+	margin: 0;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	/*background: green;*/
+	vertical-align: top;
 }
 #people li:nth-child(2n+1) {
 	clear: left;
