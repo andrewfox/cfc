@@ -4,7 +4,7 @@
  * Description: 
  *
  * @package WordPress
- * @subpackage Livework
+ * @subpackage CFC
  * @since Boilerplate 1.0
  */
 
@@ -19,6 +19,7 @@ get_header(); ?>
 
 			<h1 class="page-title"><?php the_title(); ?></h1>
 
+
 			<?php if($post->post_content=="") : ?>
 			<!-- No content -->
 			<?php else : ?>
@@ -29,9 +30,11 @@ get_header(); ?>
 			</div><!-- .entry-content -->
 			<?php endif; ?>
 
+
 			<?php if ( has_post_thumbnail() ) {
 				the_post_thumbnail('large');
 			} ?>
+
 
 			<ul id="clerks" class="clearfix">
 

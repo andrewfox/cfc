@@ -9,7 +9,7 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Boilerplate
+ * @subpackage CFC
  * @since Boilerplate 1.0
  */
 
