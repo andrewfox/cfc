@@ -17,6 +17,11 @@ get_header(); ?>
 		<article id="page-<?php the_ID(); ?>" class="main clearfix">
 
 
+			<?php if ( has_post_thumbnail() ) {
+				the_post_thumbnail('large');
+			} ?>
+
+
 			<h1 class="page-title"><?php the_title(); ?></h1>
 
 			<?php if($post->post_content=="") : ?>
