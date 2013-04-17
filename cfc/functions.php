@@ -347,6 +347,17 @@ function is_tree($pid) {      // $pid = The ID of the page we're looking for pag
 // add_image_size( 'thumb-large', 250, 250, true ); // Hard cropped large thumbnail, used on pages like Our Team
 
 
+// hides comments
+function remove_menus () {
+global $menu;
+	$restricted = array(__('Comments'));
+	end ($menu);
+	while (prev($menu)){
+		$value = explode(' ',$menu[key($menu)][0]);
+		if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
+	}
+}
+add_action('admin_menu', 'remove_menus');
 
 
 /* Continue reading (remove link) */
