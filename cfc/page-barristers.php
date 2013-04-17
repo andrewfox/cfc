@@ -4,7 +4,7 @@
  * Description: 
  *
  * @package WordPress
- * @subpackage Livework
+ * @subpackage CFC
  * @since Boilerplate 1.0
  */
 
@@ -56,19 +56,6 @@ get_header(); ?>
 
 
 			<?php wp_reset_query();?>
-
-
-
-			<div id="quote">
-				<?php if( get_field('quote-text') ): ?>
-				<blockquote>
-					<div class="quotation">
-						<?php the_field('quote-text'); ?>
-					</div>
-					<q><?php the_field('quote-attribution'); ?></q>
-				</blockquote>
-				<?php endif; ?>
-			</div>
 
 
 
