@@ -411,10 +411,14 @@ aside #quote blockquote {
 	font-family: 'AdobeCaslonW01-Regular';
 	font-weight: normal;
 	margin: 0 -10px 2em -10px;
+	text-align: center;
+}
+#people ul {
+	margin: 0 -10px 2em -10px;
 }
 #people li {
 	width: 50%;
-	float: left;
+	
 	padding: 0 10px 10px 10px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
