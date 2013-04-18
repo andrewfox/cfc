@@ -520,7 +520,7 @@ aside #quote blockquote {
 }
 #publications a img {
 	max-width: 30%;
-	margin: 0 20px 20px 0;
+	margin: 0 0 20px 0;
 	float: left;
 	box-shadow: 0 1px 10px #c6c6c6;
 	-moz-box-shadow: 0 1px 10px #c6c6c6;
@@ -550,6 +550,9 @@ aside #quote blockquote {
 }
 #publications span {
 	display: block;
+}
+.publication-text {
+	margin-left: 35%;
 }
 .publication-title {
 	font-family: 'AdobeCaslonW01-Regular';
