@@ -34,9 +34,11 @@ get_header(); ?>
 						<?php if(has_post_thumbnail()) :
 						the_post_thumbnail('medium'); 
 						endif;?>
-						<span class="publication-title"><?php the_title(); ?></span>
-						<span class="publication-excerpt"><?php the_excerpt(); ?></span>
-						<span class="publication-date"><?php the_time('F Y') ?></span>
+						<span class="publication-text">
+							<span class="publication-title"><?php the_title(); ?></span>
+							<span class="publication-excerpt"><?php the_excerpt(); ?></span>
+							<span class="publication-date"><?php the_time('F Y') ?></span>
+						</span>
 					</a>
 				</li>
 
