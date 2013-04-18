@@ -33,7 +33,7 @@ get_header(); ?>
 
 			<div class="entry-content">
 
-				<h3>Excerpt:</h3>
+				<h4>Excerpt:</h4>
 				
 				<?php the_content(); ?>
 
