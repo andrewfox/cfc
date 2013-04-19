@@ -232,8 +232,9 @@ aside {
 	margin: 0;
 	padding: 5px;
 }
-.people-details-nav li.on a {
-	color: green;
+
+.people-details-nav li a.on {
+	color: #aaa;
 }
 .people-details {
 	border-top: 1px dotted #ccc;
