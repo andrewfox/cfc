@@ -24,9 +24,7 @@ get_header(); ?>
 			<?php } ?>
 
 
-
 			<div class="people-content">
-
 
 				<?php if($post->post_content=="") : ?>
 				<!-- No content -->
@@ -34,22 +32,38 @@ get_header(); ?>
 				<?php the_content(); ?>
 				<?php endif; ?>
 
+			</div> <!-- /.people-content -->
+
+
+
+			<ul class="people-details-nav">
+				<?php if (get_field('people-directories_information')): ?><li><a href="#people-directories_information">Directories Information</a></li><?php endif; ?>
+				<?php if (get_field('people-area_of_practice')): ?><li><a href="#people-area_of_practice">Areas of Practice</a></li><?php endif; ?>
+			</ul>
+
+
+
+			<div class="people-details">
+
+
 				<?php if (get_field('people-directories_information')): ?>
-				<div class="people-directories_information">
+				<div id="people-directories_information">
 					<h2>Directories Information</h2>
 					<?php the_field('people-directories_information'); ?>
 				</div>
 				<?php endif; ?>
 
+
 				<?php if (get_field('people-area_of_practice')): ?>
-				<div class="people-area_of_practice">
+				<div id="people-area_of_practice">
 					<h2>Areas of Practice</h2>
 					<?php the_field('people-area_of_practice'); ?>
 				</div>
 				<?php endif; ?>
 
 
-			</div> <!-- /.entry-content -->
+			</div> <!-- /.people-details -->
+
 
 
 		</article>
