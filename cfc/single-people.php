@@ -47,16 +47,16 @@ get_header(); ?>
 
 
 				<?php if (get_field('people-directories_information')): ?>
-				<div id="people-directories_information">
-					<h2>Directories Information</h2>
+				<div id="people-directories_information" class="people-tab">
+					<h2 class="subtitle">Directories Information</h2>
 					<?php the_field('people-directories_information'); ?>
 				</div>
 				<?php endif; ?>
 
 
 				<?php if (get_field('people-area_of_practice')): ?>
-				<div id="people-area_of_practice">
-					<h2>Areas of Practice</h2>
+				<div id="people-area_of_practice" class="people-tab">
+					<h2 class="subtitle">Areas of Practice</h2>
 					<?php the_field('people-area_of_practice'); ?>
 				</div>
 				<?php endif; ?>

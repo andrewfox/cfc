@@ -217,6 +217,26 @@ aside {
 .people-content h2 {
 	text-align: left;
 }
+.people-details-nav {
+	float: left;
+	width: 30%;
+	text-align: right;
+}
+.people-details-nav li {
+}
+.people-details-nav li a {
+	display: block;
+	margin: 0;
+	padding: 5px;
+}
+.people-details {
+	width: 68%;
+	float: left;
+	background: red;
+	margin-left: 2%;
+}
+.people-content h2 {
+}
 
 /* === Case News (blog) =============================== */
 
