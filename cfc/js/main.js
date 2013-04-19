@@ -25,7 +25,7 @@ $('.people-details-nav a').removeClass( 'on' ).filter('1').addClass( 'on' );
 
 $(".people-details-nav a").click(function() {
 	$('.people-details-nav a').removeClass( 'on' );
-	$(this').addClass( 'on' );
+	$(this).addClass( 'on' );
 });
 
 
