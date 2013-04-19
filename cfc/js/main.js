@@ -35,6 +35,8 @@ $(".people-details-nav a").click(function() {
 	// change panels 'on' state
 	$('.people-tab').removeClass('on');
 	$(this.hash).addClass('on');
+	
+	return false;
 
 });
 
