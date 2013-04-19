@@ -234,7 +234,8 @@ aside {
 }
 
 .people-details-nav li a.on {
-	color: #aaa;
+	color: #888;
+	cursor: default;
 }
 .people-details {
 	border-top: 1px dotted #ccc;

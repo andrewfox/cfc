@@ -21,17 +21,18 @@ $(".arrow.back").click(function() {
 
 /* People tabs */
 
-$('.people-details-nav a').removeClass( 'on' ).filter('1').addClass( 'on' );
+$('.people-details-nav a').removeClass( 'on' ).filter(1).addClass( 'on' );
 
 $(".people-details-nav a").click(function() {
 
-	// change nav on state
+	// change nav 'on' state
 	$('.people-details-nav a').removeClass( 'on' );
 	$(this).addClass( 'on' );
-	
-	// change tab
-	$('people-tab').removeClass('on');
+
+	// change panels 'on' state
+	$('.people-tab').removeClass('on');
 	$(this.hash).addClass('on');
+
 });
 
 
