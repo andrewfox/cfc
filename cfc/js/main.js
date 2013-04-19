@@ -22,7 +22,7 @@ $(".arrow.back").click(function() {
 /* People tabs */
 
 $('.people-details-nav a').removeClass( 'on' )
-$('.people-details-nav li:first-child a')..addClass( 'on' );
+$('.people-details-nav li:first-child a').addClass( 'on' );
 
 $('.people-tab:first-child').addClass('on');
 
