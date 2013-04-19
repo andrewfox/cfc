@@ -232,10 +232,10 @@ aside {
 .people-details {
 	width: 68%;
 	float: left;
-	background: red;
 	margin-left: 2%;
 }
-.people-content h2 {
+.people-details h2 {
+	text-align: left;
 }
 
 /* === Case News (blog) =============================== */
