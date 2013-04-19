@@ -3,7 +3,9 @@
 
 /* === Medium screen +  =============================== */
 
-
+.subtitle {
+	text-align: left;
+}
 
 
 /* === Header =============================== */
@@ -221,6 +223,7 @@ aside {
 	float: left;
 	width: 30%;
 	text-align: right;
+	margin-top: 20px;
 }
 .people-details-nav li {
 }
@@ -229,13 +232,24 @@ aside {
 	margin: 0;
 	padding: 5px;
 }
+.people-details-nav li.on a {
+	color: green;
+}
 .people-details {
+	border-top: 1px dotted #ccc;
 	width: 68%;
 	float: left;
 	margin-left: 2%;
+	margin-top: 20px;
 }
 .people-details h2 {
 	text-align: left;
+}
+.js .people-tab {
+	display: none;
+}
+.js .people-tab.on {
+	display: block;
 }
 
 /* === Case News (blog) =============================== */
