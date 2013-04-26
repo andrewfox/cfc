@@ -64,13 +64,21 @@ aside {
 
 /* === Home =============================== */
 
-.column {
+/*.column {
 	width: 33%;
 	float: left;
 	padding: 20px 20px 20px 0;
 	border-bottom: none;
-}
+}*/
 
+.home .entry-content {
+	padding: 20px 100px 20px 20px;
+}
+.home .entry-content h2 {
+	text-shadow: none;
+	margin: 0;
+	font-size: 190%;
+}
 /* === Homepage (specifics) =============================== */
 
 

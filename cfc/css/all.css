@@ -332,7 +332,7 @@ aside #quote blockquote {
 
 .home .entry-content {
 	width: 100%;
-	padding: 20px 100px 20px 20px;
+	padding: 20px;
 	color: white;
 	margin: 0 0 3px 0;
 	-moz-box-sizing: border-box;
@@ -343,6 +343,7 @@ aside #quote blockquote {
 .home .entry-content h2 {
 	text-shadow: none;
 	margin: 0;
+	font-size: 150%;
 }
 .home .entry-content h2 em {
 	font-size: 60%;
