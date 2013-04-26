@@ -49,7 +49,7 @@ get_header(); ?>
 
 				<?php if (get_field('people-directories_information')): ?>
 				<div id="people-directories_information" class="people-tab">
-					<h2>Directories Information</h2>
+					<h2 class="tab-title">Directories Information</h2>
 					<?php the_field('people-directories_information'); ?>
 				</div>
 				<?php endif; ?>
@@ -57,14 +57,14 @@ get_header(); ?>
 
 				<?php if (get_field('people-area_of_practice')): ?>
 				<div id="people-area_of_practice" class="people-tab">
-					<h2>Areas of Practice</h2>
+					<h2 class="tab-title">Areas of Practice</h2>
 					<?php the_field('people-area_of_practice'); ?>
 				</div>
 				<?php endif; ?>
 
 
 				<div id="people-case_news" class="people-tab">
-					<h2><?php the_title(); ?> Case News &amp; Press</h2>
+					<h2 class="tab-title"><?php the_title(); ?> Case News &amp; Press</h2>
 					<?php
 						$news = get_posts(array(
 							'post_type' => 'post',
