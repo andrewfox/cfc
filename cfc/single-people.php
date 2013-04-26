@@ -66,6 +66,38 @@ get_header(); ?>
 
 
 
+
+				<div id="people-posts">
+					<h2>Posts</h2>
+					<?php
+						$news = get_posts(array(
+							'post_type' => 'post',
+							'meta_query' => array(
+								array(
+									'key' => 'post-people', // name of custom field
+									'value' => '"' . get_the_ID() . '"', // matches exactly "123", not just 123. This prevents a match for "1234"
+									'compare' => 'LIKE'
+								)
+							)
+						));
+ 
+						?>
+						<?php if( $news ): ?>
+							<ul>
+							<?php foreach( $news as $new ): ?>
+								<li>
+									<a href="<?php echo get_permalink( $new->ID ); ?>">
+										<?php echo get_the_title( $new->ID ); ?>
+									</a>
+								</li>
+							<?php endforeach; ?>
+							</ul>
+						<?php endif; ?>
+				</div>
+
+
+
+
 		</article>
 
 
