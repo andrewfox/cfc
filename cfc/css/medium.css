@@ -220,6 +220,13 @@ aside {
 	text-align: left;
 }
 .people-details-nav {
+	display: block;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+	text-align: centre;
+	margin: 0;
+	padding: 0;
+	clear: both;
 	float: left;
 	width: 30%;
 	text-align: right;

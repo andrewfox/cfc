@@ -39,7 +39,7 @@ get_header(); ?>
 			<ul class="people-details-nav">
 				<?php if (get_field('people-directories_information')): ?><li><a href="#people-directories_information">Directories Information</a></li><?php endif; ?>
 				<?php if (get_field('people-area_of_practice')): ?><li><a href="#people-area_of_practice">Areas of Practice</a></li><?php endif; ?>
-				<li><a href="#people-case_news"><?php the_title(); ?> Case News &amp; Press</a></li>
+				<li><a href="#people-case_news"><?php the_title(); ?> Case News &amp;&nbsp;Press</a></li>
 			</ul>
 
 
@@ -64,7 +64,7 @@ get_header(); ?>
 
 
 				<div id="people-case_news" class="people-tab">
-					<h2 class="tab-title"><?php the_title(); ?> Case News &amp; Press</h2>
+					<h2 class="tab-title"><?php the_title(); ?> Case News &amp;&nbsp;Press</h2>
 					<?php
 						$news = get_posts(array(
 							'post_type' => 'post',

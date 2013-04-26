@@ -648,12 +648,7 @@ a.publication-image {
 	text-align: left;
 }
 .people-details-nav {
-	border-top: 1px dotted #ccc;
-	border-bottom: 1px dotted #ccc;
-	text-align: centre;
-	margin: 0;
-	padding: 0;
-	clear: both;
+	display: none;
 }
 .people-details-nav li {
 	margin: 0;
@@ -667,10 +662,15 @@ a.publication-image {
 .people-details {
 	text-align: left;
 }
-.people-content h2 {
+h2.tab-title {
 	text-align: center;
-	text-transform: uppercase;
-	font-size: 90%;
+	margin-top: 0.5em;
+}
+.people-tab {
+	border-top: 1px dotted #ccc;
+}
+#people-case_news li {
+		color: #777;
 }
 
 /* === Gallery =============================== */
