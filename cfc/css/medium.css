@@ -187,32 +187,33 @@ aside {
 
 /* === Single Publication =============================== */
 
-.publication-image {
+a.publication-image {
 	display: block;
 	float: left;
-	width: 33.3%;
-	margin: 0 2em;
+	width: 40%;
+	margin: 0;
+	box-sizing: border-box;
 }
-.publication-image img {
+a.publication-image img {
 	width: 78%;
-	max-width: 100%;
-	height: auto;
 }
 
 .single-publication .entry-content {
 	float: left;
-	width: 60%;
-	margin: 0;
+	width: 55%;
+	margin: 0 0 0 5%;
+	box-sizing: border-box;
 }
 .single-publication .entry-content h4 {
 	margin-top: 0;
+	text-align: left;
 }
 
 /* === Single People =============================== */
 
 .single-people .wp-post-image {
 	float: left;
-	width: 30%;
+	width: 25%;
 }
 .people-content {
 	text-align: left;

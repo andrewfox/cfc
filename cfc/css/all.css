@@ -599,22 +599,22 @@ aside #quote blockquote {
 
 /* === Single Publication =============================== */
 .single-publication .publication-date {
-	margin-top: -1.2em;
+	margin-top: -1em;
 	margin-bottom: 3em;
+	padding-bottom: 0.4em;
+	border-bottom: 1px dotted #ccc;
 }
-a.publication-image {
+.publication-image {
 	display: block;
 	margin: 0;
-	width: 25%;
-	margin-right: 2em;
 }
 .publication-image span {
 	display: block;
 }
 .publication-image img {
-	max-width: 100%;
+	width: 65%;
 	height: auto;
-	margin-bottom: 0.5em;
+	margin: 0.5em;
 	box-shadow: 0 1px 10px #ccc;
 	-moz-box-shadow: 0 1px 10px #ccc;
 	-webkit-box-shadow: 0 1px 10px #ccc;
@@ -632,6 +632,14 @@ a.publication-image {
 	box-shadow: 0 1px 10px #ccc;
 	-moz-box-shadow: 0 1px 10px #ccc;
 	-webkit-box-shadow: 0 1px 10px #ccc;
+}
+
+
+.single-publication .entry-content {
+	text-align: left;
+}
+.single-publication .entry-content h4 {
+	text-align: center;
 }
 
 /* === Single People =============================== */
@@ -741,7 +749,7 @@ body.blog h1.page-title {
 .category-short .entry-title{
 	color: #9da7a9;
 }
-p.publication-date {
+.publication-date {
 	margin-bottom: 0.4em;
 }
 .post-people  {
