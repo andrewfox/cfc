@@ -722,6 +722,9 @@ a.publication-image {
 
 /* === Case News (blog) =============================== */
 
+body.blog h1.page-title {
+	margin-bottom: 0;
+}
 .type-post {
 	text-align: left;
 	-moz-box-sizing: border-box;

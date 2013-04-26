@@ -267,13 +267,9 @@ aside {
 .type-post:nth-child(2n+2) {
 	clear: left;
 }
-.type-post:nth-child(1) {
+.type-post:nth-child(2),
+.type-post:nth-child(3) {
 	border-top: none;
-	background: red;
-}
-.type-post:nth-child(0) {
-	border-top: none;
-	background: red;
 }
 .home .type-post {
 	width: auto;
