@@ -456,7 +456,7 @@ aside #quote blockquote {
 
 /*People home inc. slideshow */
 
-/*#people-slideshow {
+#peopleslideshow {
 	position: relative;
 	clear: both;
 	background: rgba(2,73,83,.7);
@@ -476,7 +476,7 @@ aside #quote blockquote {
 	margin: 0;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	/*background: green;*!/
+	/*background: green;*/
 	vertical-align: top;
 }
 
@@ -487,12 +487,12 @@ aside #quote blockquote {
 	display: none;
 }
 
-#people-slideshow a {
+#peopleslideshow a {
 	color: white;
 }
-#people-slideshow a:hover {
+#peopleslideshow a:hover {
 	color: #d6e28c;
-}*/
+}
 
 /* === Clerks =============================== */
 
