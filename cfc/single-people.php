@@ -39,6 +39,7 @@ get_header(); ?>
 			<ul class="people-details-nav">
 				<?php if (get_field('people-directories_information')): ?><li><a href="#people-directories_information">Directories Information</a></li><?php endif; ?>
 				<?php if (get_field('people-area_of_practice')): ?><li><a href="#people-area_of_practice">Areas of Practice</a></li><?php endif; ?>
+				<li><a href="#people-case_news">Case News for <?php the_title(); ?></a></li>
 			</ul>
 
 
@@ -62,13 +63,8 @@ get_header(); ?>
 				<?php endif; ?>
 
 
-			</div> <!-- /.people-details -->
-
-
-
-
-				<div id="people-posts">
-					<h2>Posts</h2>
+				<div id="people-case_news" class="people-tab">
+					<h2>Case News</h2>
 					<?php
 						$news = get_posts(array(
 							'post_type' => 'post',
@@ -80,20 +76,22 @@ get_header(); ?>
 								)
 							)
 						));
- 
-						?>
-						<?php if( $news ): ?>
-							<ul>
-							<?php foreach( $news as $new ): ?>
-								<li>
-									<a href="<?php echo get_permalink( $new->ID ); ?>">
-										<?php echo get_the_title( $new->ID ); ?>
-									</a>
-								</li>
-							<?php endforeach; ?>
-							</ul>
-						<?php endif; ?>
+					?>
+					<?php if( $news ): ?>
+						<ul>
+						<?php foreach( $news as $new ): ?>
+							<li>
+								<a href="<?php echo get_permalink( $new->ID ); ?>">
+									<?php echo get_the_title( $new->ID ); ?>
+								</a>
+							</li>
+						<?php endforeach; ?>
+						</ul>
+					<?php endif; ?>
 				</div>
+
+
+			</div> <!-- /.people-details -->
 
 
 
