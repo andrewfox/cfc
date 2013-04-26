@@ -461,6 +461,20 @@ aside #quote blockquote {
 	clear: both;
 	background: rgba(2,73,83,.7);
 	overflow: hidden;
+	text-align: center;
+}
+#people-slideshow li {
+	width: 46%;
+	display: inline-block;
+	padding: 0 10px 20px;
+	margin: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/*background: green;*/
+	vertical-align: top;
+}
+#people-slideshow li.more {
+	display: none;
 }
 .arrow {
 	display: none;
