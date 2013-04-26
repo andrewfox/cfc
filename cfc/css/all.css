@@ -666,12 +666,14 @@ h2.tab-title {
 	text-align: center;
 	margin-top: 0.5em;
 	font-size: 1.6em;
+	border-bottom: 1px dotted #ccc;
+	padding: 0 0 0.2em 0;
 }
 .people-tab {
 	border-top: 1px dotted #ccc;
 }
 #people-case_news li {
-		color: #777;
+		color: #9da7a9;
 }
 
 /* === Gallery =============================== */
@@ -736,7 +738,7 @@ body.blog h1.page-title {
 	font-size: 1.5em;
 }
 .category-short .entry-title{
-	color: #777;
+	color: #9da7a9;
 }
 p.publication-date {
 	margin-bottom: 0.4em;

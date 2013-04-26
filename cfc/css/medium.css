@@ -242,15 +242,14 @@ aside {
 }
 
 .people-details-nav li a.on {
-	color: #888;
+	color: #9da7a9;
 	cursor: default;
 }
 .people-details {
 	border-top: 1px dotted #ccc;
 	width: 68%;
 	float: left;
-	margin-left: 2%;
-	margin-top: 20px;
+	margin: 20px 0 20px 2%;
 }
 .people-details h2 {
 	text-align: left;
@@ -260,6 +259,14 @@ aside {
 }
 .js .people-tab.on {
 	display: block;
+}
+h2.tab-title {
+	text-align: left;
+	margin-top: 0.4em;
+	font-size: 1.5em;
+}
+.people-tab {
+	border-top: none;
 }
 
 /* === Case News (blog) =============================== */
