@@ -786,6 +786,7 @@ body.blog h1.page-title {
 	margin-bottom: 0;
 }
 .type-post {
+	padding-top: 20px;
 	text-align: left;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
