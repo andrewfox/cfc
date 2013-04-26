@@ -27,7 +27,7 @@ get_header(); ?>
 				the_post_thumbnail('large');
 			} ?>
 
-			<div class="entry-content">
+			<div class="entry-content w-sidebar">
 				<?php the_content(); ?>
 			</div><!-- .entry-content -->
 
