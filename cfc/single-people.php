@@ -81,24 +81,26 @@ get_header(); ?>
 						<ul>
 						<?php foreach( $news as $new ): ?>
 							<li>
-							<?php if ( get_field('post-url') ) { // external link ?>
-			
-								<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-									<span class="post-title"><?php the_title(); ?>&nbsp;<span class="ss">redirect</span></span>
-								</a>
-			
-							<?php } elseif ( in_category('4') ) { // short ?> 
-							
-								<?php the_title(); ?>
-			
-							<?php } else { // regular ?> 
-			
-								<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-									<?php the_title(); ?>
-								</a>
+								<a href="<?php echo get_permalink( $new->ID ); ?>">
+									<?php echo get_the_title( $new->ID ); ?>
+								</a><br/>
+				<?php if ( get_field('post-url') ) { // external link ?>
 
-							<?php } ?>
+					<a href="<?php the_field('post-url'); ?>" title="<?php printf( __('Read on other website', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+						<span class="post-title"><?php get_the_title( $new->ID ); ?>&nbsp;<span class="ss">redirect</span></span>
+					</a>
 
+				<?php } elseif ( in_category('4') ) { // short ?> 
+				
+					<?php get_the_title( $new->ID ); ?>
+
+				<?php } else { // regular ?> 
+
+					<a href="<?php echo get_permalink( $new->ID ); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+						<?php get_the_title( $new->ID ); ?>
+					</a>
+
+				<?php } ?> 
 							</li>
 						<?php endforeach; ?>
 
