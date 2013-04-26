@@ -37,7 +37,7 @@ get_header(); ?>
 				
 				<?php the_content(); ?>
 
-				<p><a href="<?php the_field('publication-file'); ?>" class="download">View &lsquo;<?php the_title(); ?> [PDF] &rsquo;</a></p>
+				<p><a href="<?php the_field('publication-file'); ?>">View &lsquo;<?php the_title(); ?> [PDF] &rsquo;</a></p>
 
 			</div> <!-- /.entry-content -->
 

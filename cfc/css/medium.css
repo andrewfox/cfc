@@ -201,7 +201,11 @@ aside {
 
 .single-publication .entry-content {
 	float: left;
-	width: 50%;
+	width: 60%;
+	margin: 0;
+}
+.single-publication .entry-content h4 {
+	margin-top: 0;
 }
 
 /* === Single People =============================== */

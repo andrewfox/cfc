@@ -565,6 +565,7 @@ aside #quote blockquote {
 }
 .publication-excerpt p {
 	margin: 0;
+	color: #222;
 }
 .publication-date {
 	font-size: 90%;
@@ -795,17 +796,15 @@ p.publication-date {
 
 
 footer {
-	padding: 0px 10px;
+	padding: 20px 10px;
 	margin: 3em 0;
-	border-top: 1px solid #ddd;
 	clear: both;
 	font-size: 80%;
-	color: #888;
-	min-height: 400px;
+	color: #9da7a9;
 	
 }
-footer > p {
-	padding: 10px;
+footer p {
+	margin: 0;
 }
 
 
