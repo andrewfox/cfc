@@ -81,9 +81,7 @@ get_header(); ?>
 						<ul>
 						<?php foreach( $news as $new ): ?>
 							<li>
-								<a href="<?php echo get_permalink( $new->ID ); ?>">
-									<?php echo get_the_title( $new->ID ); ?>
-								</a><br/>
+								
 				<?php if ( get_field('post-url', $new->ID) ) { // external link ?>
 
 					<a href="<?php the_field('post-url',$new->ID); ?>" rel="bookmark">
