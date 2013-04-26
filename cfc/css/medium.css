@@ -261,6 +261,7 @@ a.publication-image img {
 .single-people .wp-post-image {
 	float: left;
 	width: 30%;
+	margin-bottom: 3em;
 }
 .people-content {
 	text-align: left;
@@ -271,9 +272,13 @@ a.publication-image img {
 .people-content h2 {
 	text-align: left;
 }
+.people-details {
+	margin-top: 1em;
+	border-top: 1px dotted #ccc;
+	clear: both;
+}
 .people-details-nav {
 	display: block;
-	border-top: 1px dotted #ccc;
 	border-bottom: 1px dotted #ccc;
 	text-align: centre;
 	margin: 0;
@@ -282,7 +287,7 @@ a.publication-image img {
 	float: left;
 	width: 30%;
 	text-align: right;
-	margin-top: 20px;
+	margin-top: 0.4em;
 	border-bottom: none;
 }
 .people-details-nav li {
@@ -297,11 +302,10 @@ a.publication-image img {
 	color: #9da7a9;
 	cursor: default;
 }
-.people-details {
-	border-top: 1px dotted #ccc;
+.people-details-sections {
 	width: 68%;
 	float: left;
-	margin: 20px 0 20px 2%;
+	margin: 0px 0 20px 2%;
 }
 .people-details h2 {
 	text-align: left;
