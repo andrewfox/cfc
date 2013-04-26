@@ -389,9 +389,7 @@ aside #quote blockquote {
 	font-weight: normal;
 	font-size: 110%;
 }
-#contact-list p {
-	margin: 0;
-}
+
 
 .news-email {
 	font-family: 'Johnston ITC W01 Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
@@ -417,6 +415,24 @@ aside #quote blockquote {
 	color: #8c992f;
 }
 
+
+
+
+/* === Contact =============================== */
+
+#contact-list {
+	margin: auto 25%;
+	text-align: left;
+	
+}
+#contact-list li {
+	float: left;
+	width: 50%;
+	margin-bottom: 3em;
+}
+#contact-list p {
+	margin: 0;
+}
 
 
 

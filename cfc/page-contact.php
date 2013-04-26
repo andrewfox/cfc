@@ -35,6 +35,7 @@ get_header(); ?>
 					<p>London</p>
 					<p>EC1A 7NT</p>
 					<p>United Kingdom</p>
+					<p><a href="https://maps.google.co.uk/maps?q=EC1A+7NT&hl=en&sll=51.528642,-0.101599&sspn=0.506203,0.53009&hnear=London+EC1A+7NT,+United+Kingdom&t=m&z=17">View on Google Maps</a></p>
 				</li>
 
 				<li class="contact-address">
