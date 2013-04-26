@@ -24,7 +24,7 @@ $(".arrow.forward").click(function() {
 	$('.arrow').removeClass( 'off' );
 	$('.arrow.forward').addClass( 'off' );
 	$('#slideshowholder').animate({
-		marginLeft: '-=90%'
+		marginLeft: '-90%'
 	}, 500);
 });
 $(".arrow.back").click(function() {
@@ -33,7 +33,7 @@ $(".arrow.back").click(function() {
 	$('.arrow').removeClass( 'off' );
 	$('.arrow.back').addClass( 'off' );
 	$('#slideshowholder').animate({
-		marginLeft: '+=0%'
+		marginLeft: '0%'
 	}, 500);
 });
 
