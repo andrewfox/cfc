@@ -137,6 +137,14 @@ q:before {
 	max-width: 70%;
 	height: auto;
 }
+ul  {
+	margin-left: 1em;
+	list-style: disc;
+}
+ul li {
+	margin: 0.5em 0 0.5em 1em;
+	list-style: disc;
+}
 
 /* === Header =============================== */
 

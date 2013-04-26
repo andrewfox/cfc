@@ -51,7 +51,10 @@ h1.page-title {
 .entry-content {
 	margin: 1em 0;
 	text-align: left;
+}
+.entry-content.w-sidebar {
 	float: left;
+	width: 74%;
 }
 
 /* === Aside =============================== */
