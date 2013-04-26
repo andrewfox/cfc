@@ -158,7 +158,7 @@ aside {
 	width: 90%;
 	margin-top: 0;
 }
-#people.slideshow li .barrister-name {
+.barrister-name {
 	display: block;
 	width: 98%;
 	overflow: hidden;
@@ -260,7 +260,7 @@ a.publication-image img {
 
 .single-people .wp-post-image {
 	float: left;
-	width: 25%;
+	width: 30%;
 }
 .people-content {
 	text-align: left;
