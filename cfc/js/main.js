@@ -23,7 +23,7 @@ $(".arrow.forward").click(function() {
 	//$('#slideshowholder ').css( 'margin-left','-=90%' );
 	$('.arrow').removeClass( 'off' );
 	$('.arrow.forward').addClass( 'off' );
-	$('#slideshowholder').animate({
+	$('.slideshow li:first-child').animate({
 		marginLeft: '-90%'
 	}, 500);
 });
@@ -32,7 +32,7 @@ $(".arrow.back").click(function() {
 	//$('#slideshowholder').css( 'margin-left','+=0%' );
 	$('.arrow').removeClass( 'off' );
 	$('.arrow.back').addClass( 'off' );
-	$('#slideshowholder').animate({
+	$('.slideshow li:first-child').animate({
 		marginLeft: '0%'
 	}, 500);
 });
