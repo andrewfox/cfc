@@ -340,11 +340,12 @@ aside #quote blockquote {
 	box-sizing: border-box;
 	background-color: #0f4752;
 	font-size: 90%;
+	text-align: left;
 }
 .home .entry-content h2 {
 	text-shadow: none;
 	margin: 0;
-	font-size: 150%;
+	font-size: 110%;
 }
 .home .entry-content h2 em {
 	font-size: 60%;
