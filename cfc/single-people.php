@@ -39,7 +39,7 @@ get_header(); ?>
 			<ul class="people-details-nav">
 				<?php if (get_field('people-directories_information')): ?><li><a href="#people-directories_information">Directories Information</a></li><?php endif; ?>
 				<?php if (get_field('people-area_of_practice')): ?><li><a href="#people-area_of_practice">Areas of Practice</a></li><?php endif; ?>
-				<li><a href="#people-case_news">Case News for <?php the_title(); ?></a></li>
+				<li><a href="#people-case_news"><?php the_title(); ?> Case News &amp; Press</a></li>
 			</ul>
 
 
@@ -64,7 +64,7 @@ get_header(); ?>
 
 
 				<div id="people-case_news" class="people-tab">
-					<h2>Case News</h2>
+					<h2><?php the_title(); ?> Case News &amp; Press</h2>
 					<?php
 						$news = get_posts(array(
 							'post_type' => 'post',
@@ -81,28 +81,23 @@ get_header(); ?>
 						<ul>
 						<?php foreach( $news as $new ): ?>
 							<li>
-								<!--
-<a href="<?php echo get_permalink( $new->ID ); ?>">
+							<?php if ( get_field('post-url', $new->ID) ) { // external link ?>
+			
+								<a href="<?php the_field('post-url',$new->ID); ?>" rel="bookmark">
+									<span class="post-title"><?php echo get_the_title( $new->ID ); ?>&nbsp;<span class="ss">redirect</span></span>
+								</a>
+			
+							<?php } elseif ( in_category('4', $new->ID) ) { // short ?> 
+							
+								<?php echo get_the_title( $new->ID ); ?>
+			
+							<?php } else { // regular ?> 
+			
+								<a href="<?php echo get_permalink( $new->ID ); ?>" rel="bookmark">
 									<?php echo get_the_title( $new->ID ); ?>
-								</a><br/>
--->
-				<?php if ( get_field('post-url', $new->ID) ) { // external link ?>
-
-					<a href="<?php the_field('post-url',$new->ID); ?>" rel="bookmark">
-						<span class="post-title"><?php echo get_the_title( $new->ID ); ?>&nbsp;<span class="ss">redirect</span></span>
-					</a>
-
-				<?php } elseif ( in_category('4', $new->ID) ) { // short ?> 
-				
-					<?php echo get_the_title( $new->ID ); ?>
-
-				<?php } else { // regular ?> 
-
-					<a href="<?php echo get_permalink( $new->ID ); ?>" rel="bookmark">
-						<?php echo get_the_title( $new->ID ); ?>
-					</a>
-
-				<?php } ?> 
+								</a>
+			
+							<?php } ?> 
 							</li>
 						<?php endforeach; ?>
 
