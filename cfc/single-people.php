@@ -81,21 +81,25 @@ get_header(); ?>
 						<ul>
 						<?php foreach( $news as $new ): ?>
 							<li>
-								
+								<!--
+<a href="<?php echo get_permalink( $new->ID ); ?>">
+									<?php echo get_the_title( $new->ID ); ?>
+								</a><br/>
+-->
 				<?php if ( get_field('post-url', $new->ID) ) { // external link ?>
 
 					<a href="<?php the_field('post-url',$new->ID); ?>" rel="bookmark">
-						<span class="post-title"><?php get_the_title( $new->ID ); ?>&nbsp;<span class="ss">redirect</span></span>
+						<span class="post-title"><?php echo get_the_title( $new->ID ); ?>&nbsp;<span class="ss">redirect</span></span>
 					</a>
 
 				<?php } elseif ( in_category('4', $new->ID) ) { // short ?> 
 				
-					<?php get_the_title( $new->ID ); ?>
+					<?php echo get_the_title( $new->ID ); ?>
 
 				<?php } else { // regular ?> 
 
 					<a href="<?php echo get_permalink( $new->ID ); ?>" rel="bookmark">
-						<?php get_the_title( $new->ID ); ?>
+						<?php echo get_the_title( $new->ID ); ?>
 					</a>
 
 				<?php } ?> 
