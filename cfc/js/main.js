@@ -24,7 +24,7 @@ $(".arrow.forward").click(function() {
 	$('.arrow').removeClass( 'off' );
 	$('.arrow.forward').addClass( 'off' );
 	$('.slideshow li:first-child').animate({
-		marginLeft: '-90%'
+		marginLeft: '-100%'
 	}, 500);
 });
 $(".arrow.back").click(function() {
