@@ -100,31 +100,64 @@ aside {
 /* People slideshow on homepage */
 
 #people-slideshow {
-	padding: 40px 40px 0 40px;
+	position: relative;
+	padding: 0;
 	margin: 0;
+	clear: both;
+	background: rgba(2,73,83,.7);
 	overflow: hidden;
+	text-align: center;
 }
 #people.slideshow {
+	width: 80%;
 	padding: 0;
 	margin: 0;
 	white-space: nowrap;
 	background: #333;
 	box-sizing: border-box;
+	height: 300px;
+	overflow: hidden;
 }
 #people.slideshow li {
 	box-sizing: border-box;
 	background: #a00;
-	display: inline-block;
+	display: block;
 	width: 25%;
+	position: absolute;
 	font-size: 80%;
 	padding: 0 0 10px 0;
+	margin: 0 -0.7% 0 0;
+}
+#people.slideshow li:nth-child(1) {
+	margin-left: 0;
+}
+#people.slideshow li:nth-child(2) {
+	margin-left: 25%;
+}
+#people.slideshow li:nth-child(3) {
+	margin-left: 50%;
+}
+#people.slideshow li:nth-child(4) {
+	margin-left: 75%;
+}
+#people.slideshow li:nth-child(5) {
+	margin-left: 100%;
+}
+#people.slideshow li:nth-child(6) {
+	margin-left: 125%;
+}
+#people.slideshow li:nth-child(7) {
+	margin-left: 150%;
+}
+#people.slideshow li:nth-child(8) {
+	margin-left: 175%;
 }
 #people.slideshow li:nth-child(2n+1) {
 	background: red;
 }
 #people.slideshow li.off {
 }
-#people.slideshow li.more {
+/*#people.slideshow li.more {
 	display: none;
 }
 #people.slideshow li.more a {
@@ -132,17 +165,21 @@ aside {
 	width: 100%;
 	height: 100%;
 	display: block;
-}
+}*/
 #people.slideshow li img {
-	width: 100%;
+	width: 90%;
 	margin-top: 2px;
+}
+#people.slideshow li .barrister-name {
+	display: block;
+	width: 98%;
 }
 /* Arrows (show if JS is on) */
 .js .arrow {
 	display: block;
 	position: absolute;
 	color: white;
-	top: 100px;
+	top: 45%;
 	padding: 10px;
 	cursor: pointer;
 	font-size: 120%;

@@ -28,35 +28,40 @@ get_header(); ?>
 			</div><!-- .entry-content -->
 
 
-			<div id="people-slideshow">
-				<ul id="people" class="slideshow clearfix">
-	
-				<?php query_posts(array('post_type' => 'people', 'category_name' => 'barrister', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'date', 'paged'=> $paged));
-				while(have_posts()) : the_post();  ?>
-	
-					<li <?php post_class(); ?>>
-						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-							<?php if(has_post_thumbnail()) :
-							the_post_thumbnail('thumbnail'); 
-							endif;?>
-							<span class="barrister-name"><?php the_title(); ?> <?php if( get_field('people-title') ): ?><span><?php the_field('people-title'); ?><?php endif; ?></span></span>
-						</a>
-					</li>
-	
-				<?php endwhile; ?>
+			<div id="peopleslideshow">
 
-					<li class="more">
-						<a href="<?php echo get_page_link(14); ?>" title="See all Cloth Fair Chambers barristers" rel="bookmark">
-							See all Barristers&hellip;
-						</a>
-					</li>
+				<div id="slideshowholder">
+
+					<ul id="people" class="slideshow clearfix">
+		
+					<?php query_posts(array('post_type' => 'people', 'category_name' => 'barrister', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'date', 'paged'=> $paged));
+					while(have_posts()) : the_post();  ?>
+		
+						<li <?php post_class(); ?>>
+							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+								<?php if(has_post_thumbnail()) :
+								the_post_thumbnail('thumbnail'); 
+								endif;?>
+								<span class="barrister-name"><?php the_title(); ?> <?php if( get_field('people-title') ): ?><span><?php the_field('people-title'); ?><?php endif; ?></span></span>
+							</a>
+						</li>
+		
+					<?php endwhile; ?>
 	
-				</ul>
+						<li class="more">
+							<a href="<?php echo get_page_link(14); ?>" title="See all Cloth Fair Chambers barristers" rel="bookmark">
+								See all Barristers&hellip;
+							</a>
+						</li>
+		
+					</ul>
+				
+				</div><!-- /#slideshowholder -->
 
 				<div class="ss arrow back off">back</div>
 				<div class="ss arrow forward">forward</div>
 
-			</div><!-- /.people-slideshow -->
+			</div><!-- /#peopleslideshow -->
 
 			<?php wp_reset_query();?>
 
