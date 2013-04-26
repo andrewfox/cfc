@@ -111,13 +111,13 @@ aside {
 #slideshowholder {
 	position: relative;
 	width: 100%;
-	background: #eee;
+	/*background: #eee;*/
 }
 #people.slideshow {
 	padding: 0;
 	margin: 0;
 	white-space: nowrap;
-	background: #333;
+	/*background: #333;*/
 	box-sizing: border-box;
 	height: 20%;
 	letter-spacing: -0.31em;
@@ -125,53 +125,35 @@ aside {
 }
 #people.slideshow li {
 	box-sizing: border-box;
-	background: #a00;
+	/*background: #a00;*/
 	display: inline-block;
+	vertical-align: bottom;
 	width: 25%;
 	font-size: 80%;
-	padding: 0 0 10px 0;
+	padding: 0;
 	margin: 0;
 	letter-spacing: normal;
 	word-spacing: normal;
 }
+
 #people.slideshow li:nth-child(1) {
-	margin-left: 0;
 }
-/*#people.slideshow li:nth-child(2) {
-	margin-left: 25%;
-}
-#people.slideshow li:nth-child(3) {
-	margin-left: 50%;
-}
-#people.slideshow li:nth-child(4) {
-	margin-left: 75%;
-}
-#people.slideshow li:nth-child(5) {
-	margin-left: 100%;
-}
-#people.slideshow li:nth-child(6) {
-	margin-left: 125%;
-}
-#people.slideshow li:nth-child(7) {
-	margin-left: 150%;
-}
-#people.slideshow li:nth-child(8) {
-	margin-left: 175%;
-}*/
-#people.slideshow li:nth-child(2n+1) {
+
+/*#people.slideshow li:nth-child(2n+1) {
 	background: red;
-}
+}*/
+
 #people.slideshow li.off {
 }
-/*#people.slideshow li.more {
-	display: none;
+#people.slideshow li.more {
+	display: inline-block;
 }
 #people.slideshow li.more a {
 	padding-top: 4em;
 	width: 100%;
 	height: 100%;
 	display: block;
-}*/
+}
 #people.slideshow li img {
 	width: 90%;
 	margin-top: 0;

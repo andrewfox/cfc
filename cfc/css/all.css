@@ -481,6 +481,9 @@ aside #quote blockquote {
 	vertical-align: top;
 }
 
+
+#people.slideshow li:nth-child(1) {
+}
 #people.slideshow li.more {
 	display: none;
 }
