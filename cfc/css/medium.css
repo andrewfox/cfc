@@ -101,20 +101,30 @@ aside {
 
 #people-slideshow {
 	padding: 40px 40px 0 40px;
+	margin: 0;
 	overflow: hidden;
 }
 #people.slideshow {
 	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	background: #333;
+	box-sizing: border-box;
 }
 #people.slideshow li {
 	box-sizing: border-box;
-	float: left;
+	background: #a00;
+	display: inline-block;
+	width: 25%;
+	font-size: 80%;
+	padding: 0 0 10px 0;
 }
-#people.slideshow li {
-	width: 24%;
-	font-size: 80%
+#people.slideshow li:nth-child(2n+1) {
+	background: red;
 }
 #people.slideshow li.off {
+}
+#people.slideshow li.more {
 	display: none;
 }
 #people.slideshow li.more a {
@@ -123,7 +133,10 @@ aside {
 	height: 100%;
 	display: block;
 }
-
+#people.slideshow li img {
+	width: 100%;
+	margin-top: 2px;
+}
 /* Arrows (show if JS is on) */
 .js .arrow {
 	display: block;

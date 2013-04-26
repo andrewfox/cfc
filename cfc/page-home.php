@@ -39,7 +39,7 @@ get_header(); ?>
 							<?php if(has_post_thumbnail()) :
 							the_post_thumbnail('thumbnail'); 
 							endif;?>
-							<span><?php the_title(); ?> <?php if( get_field('people-title') ): ?><span><?php the_field('people-title'); ?><?php endif; ?></span></span>
+							<span class="barrister-name"><?php the_title(); ?> <?php if( get_field('people-title') ): ?><span><?php the_field('people-title'); ?><?php endif; ?></span></span>
 						</a>
 					</li>
 	

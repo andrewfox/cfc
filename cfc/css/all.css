@@ -463,7 +463,13 @@ aside #quote blockquote {
 	overflow: hidden;
 	text-align: center;
 }
-#people-slideshow li {
+#people.slideshow {
+	margin: 0;
+	padding: 20px 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#people.slideshow li {
 	width: 46%;
 	display: inline-block;
 	padding: 0 10px 20px;
@@ -473,18 +479,13 @@ aside #quote blockquote {
 	/*background: green;*/
 	vertical-align: top;
 }
-#people-slideshow li.more {
+#people.slideshow li.more {
 	display: none;
 }
 .arrow {
 	display: none;
 }
-#people.slideshow {
-	margin: 0;
-	padding: 20px 0;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
+
 #people-slideshow a {
 	color: white;
 }
