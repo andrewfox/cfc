@@ -720,7 +720,6 @@ aside #quote blockquote {
 .people-details {
 	text-align: left;
 }
-<<<<<<< HEAD
 h2.tab-title {
 	text-align: center;
 	margin-top: 0.5em;
@@ -733,10 +732,9 @@ h2.tab-title {
 }
 #people-case_news li {
 		color: #9da7a9;
-=======
+}
 .people-details h2 {
 	margin-top: 15px;
->>>>>>> Tiny tweaks
 }
 
 /* === Gallery =============================== */
