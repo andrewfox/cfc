@@ -34,6 +34,8 @@
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/medium.css" media="only screen and (min-width:500px)">
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/large.css" media="only screen and (min-width:720px)">
 
+		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/print.css" media="print">
+
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		
 		<!-- Scripts: Jquery, Modernizr, Main (custom) -->
