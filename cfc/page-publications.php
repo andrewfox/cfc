@@ -36,7 +36,7 @@ get_header(); ?>
 						endif;?>
 						<span class="publication-text">
 							<span class="publication-title"><?php the_title(); ?></span>
-							<span class="publication-excerpt"><?php the_excerpt(); ?></span>
+							<!-- <span class="publication-excerpt"><?php the_excerpt(); ?></span> -->
 							<span class="publication-date"><?php the_time('F Y') ?></span>
 						</span>
 					</a>
