@@ -261,9 +261,7 @@ a.publication-image img {
 /* === Single People =============================== */
 
 .single-people .wp-post-image {
-	float: left;
-	width: 30%;
-	margin-bottom: 3em;
+	width: 40%;
 }
 .people-content {
 	text-align: left;
@@ -287,7 +285,7 @@ a.publication-image img {
 	padding: 0;
 	clear: both;
 	float: left;
-	width: 30%;
+	width: 25%;
 	text-align: right;
 	margin-top: 0.4em;
 	border-bottom: none;
@@ -305,7 +303,7 @@ a.publication-image img {
 	cursor: default;
 }
 .people-details-sections {
-	width: 68%;
+	width: 73%;
 	float: left;
 	margin: 0px 0 20px 2%;
 }

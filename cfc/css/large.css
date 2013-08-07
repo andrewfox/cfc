@@ -43,3 +43,10 @@
 	font-size: 110%;
 	clear: left;
 }
+
+
+/* === Single People =============================== */
+
+.single-people .wp-post-image {
+	width: 30%;
+}
