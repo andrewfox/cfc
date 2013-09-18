@@ -26,7 +26,7 @@ get_header(); ?>
 
 			<ul id="publications" class="clearfix">
 
-			<?php query_posts(array('post_type' => 'publication', 'posts_per_page' => -1 , 'order' => 'DESC', 'orderby' => 'date', 'paged'=> $paged));
+			<?php query_posts(array('post_type' => 'publication', 'posts_per_page' => 6 , 'order' => 'DESC', 'orderby' => 'date', 'paged'=> $paged));
 			while(have_posts()) : the_post();  ?>
 
 				<li <?php post_class(); ?>>
