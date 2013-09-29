@@ -29,16 +29,20 @@ get_header(); ?>
 
 			<ul id="contact-list">
 
-					<li class="contact-address">
+				<li class="contact-map">
+					<iframe src="http://mapsengine.google.com/map/embed?mid=z3NW8LAfVifg.kSEcrw6Jz5DI"></iframe>
+				</li>
+
+				<li class="contact-address">
 					<h3>Address</h3>
 					<p>39-40 Cloth Fair,</p>
 					<p>London</p>
 					<p>EC1A 7NT</p>
 					<p>United Kingdom</p>
-					<p><a href="https://maps.google.co.uk/maps?q=EC1A+7NT&hl=en&sll=51.528642,-0.101599&sspn=0.506203,0.53009&hnear=London+EC1A+7NT,+United+Kingdom&t=m&z=17">View on Google Maps</a></p>
+					<p><a href="https://mapsengine.google.com/map/edit?mid=z3NW8LAfVifg.kSEcrw6Jz5DI"><span class="ss">map</span> View on Google Maps</a></p>
 				</li>
 
-				<li class="contact-address">
+				<li class="contact-details">
 					<h3>Contact</h3>
 					<p><a href=""><span class="ss">telephone</span> 020 7710 6444</a></p>
 					<p><a href=""><span class="ss">email</span> senior clerk</a></p>

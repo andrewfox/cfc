@@ -45,6 +45,17 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 			</ul>
+			
+				<?php /* Display navigation to next/previous pages when applicable */ ?>
+	<?php if ( $wp_query->max_num_pages > 1 ) : ?>
+
+		<nav class="page-navigation">
+			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav ss">back</span>Older', 'cfc' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( '<span class="meta-nav ss">forward</span>Newer', 'cfc' ) ); ?></div>
+		</nav><!-- .page-navigation -->
+
+	<?php endif; ?>
+
 
 			<?php wp_reset_query();?>
 

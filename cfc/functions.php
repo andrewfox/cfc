@@ -324,6 +324,32 @@ function create_post_type_publications() {
 	);
 }
 
+ 
+/*
+*  Create a simple sub options page called 'Footer'
+*/
+ 
+if( function_exists('acf_add_options_sub_page') )
+{
+    acf_add_options_sub_page( 'Imagesx4' );
+}
+ 
+/*
+*  Create an advanced sub page called 'Footer' that sits under the General options menu
+*/
+ 
+if( function_exists('acf_add_options_sub_page') )
+{
+    acf_add_options_sub_page(array(
+        'title' => 'Imagesx4',
+        'parent' => 'options-general.php',
+        'capability' => 'manage_options'
+    ));
+}
+
+
+
+
 
 /* Editor style tweaks */
 add_editor_style( 'css/editor-style.css' );

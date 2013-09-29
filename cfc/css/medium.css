@@ -8,6 +8,11 @@
 }
 
 
+/* === General =============================== */
+
+
+
+
 /* === Header =============================== */
 
 header {
@@ -258,6 +263,9 @@ a.publication-image img {
 	text-align: left;
 }
 
+
+
+
 /* === Single People =============================== */
 
 .single-people .wp-post-image {
@@ -328,22 +336,22 @@ h2.tab-title {
 
 
 /* === Case News (blog) =============================== */
-
+.blog .main {
+	text-align: center;
+}
 .type-post {
-	width: 50%;
-	float: left;
-	padding: 20px 20px 20px 0;
-	border-top: 1px dotted #ccc;
-}
-
-.type-post:nth-child(2n+2) {
-	clear: left;
-}
-.type-post:nth-child(2),
-.type-post:nth-child(3) {
-	border-top: none;
+	max-width: 60%;
+	margin-left: 20%;
+	padding: 20px 20px 0 0;
 }
 .home .type-post {
 	width: auto;
 	padding: 0;
+}
+.blog .nav-next {
+	margin-right: 20%;
+	
+}
+.blog .nav-previous {
+	margin-left: 20%;
 }

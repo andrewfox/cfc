@@ -5,7 +5,30 @@
 
 
 
+/* === Contact =============================== */
 
+#contact-list {
+	margin: 0;
+	text-align: left;
+	
+}
+#contact-list li {
+}
+#contact-list li.contact-map {
+	float: left;
+	width: 50%;
+	margin-bottom: 3em;
+	padding-right: 1.5em;
+}
+#contact-list li.contact-address,
+#contact-list li.contact-details {
+	float: left;
+	width: 25%;
+	margin-bottom: 3em;
+}
+#contact-list p {
+	margin: 0;
+}
 
 /* === People =============================== */
 #people {
