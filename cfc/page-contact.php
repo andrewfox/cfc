@@ -29,10 +29,6 @@ get_header(); ?>
 
 			<ul id="contact-list">
 
-				<li class="contact-map">
-					<iframe src="http://mapsengine.google.com/map/embed?mid=z3NW8LAfVifg.kSEcrw6Jz5DI"></iframe>
-				</li>
-
 				<li class="contact-address">
 					<h3>Address</h3>
 					<p>39-40 Cloth Fair,</p>
@@ -40,6 +36,7 @@ get_header(); ?>
 					<p>EC1A 7NT</p>
 					<p>United Kingdom</p>
 					<p><a href="https://mapsengine.google.com/map/edit?mid=z3NW8LAfVifg.kSEcrw6Jz5DI"><span class="ss">map</span> View on Google Maps</a></p>
+					<p>DX: 321 Chancery Lane</p>
 				</li>
 
 				<li class="contact-details">
@@ -47,6 +44,10 @@ get_header(); ?>
 					<p><a href=""><span class="ss">telephone</span> 020 7710 6444</a></p>
 					<p><a href=""><span class="ss">email</span> senior clerk</a></p>
 					<p><a href=""><span class="ss">email</span> office manager</a></p>
+				</li>
+
+				<li class="contact-map">
+					<iframe src="http://mapsengine.google.com/map/embed?mid=z3NW8LAfVifg.kSEcrw6Jz5DI&z=4"></iframe>
 				</li>
 
 			</ul>
