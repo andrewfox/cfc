@@ -54,10 +54,10 @@ get_header(); ?>
 
 
 			<ul id="page-images" class="clearfix">
-				<li><img src="<?php bloginfo( 'template_directory' ); ?>/img/footer-1.jpg" alt="Photo: meeting"/></li>
-				<li><img src="<?php bloginfo( 'template_directory' ); ?>/img/footer-2.jpg" alt="Photo: architectural detail"/></li>
-				<li><img src="<?php bloginfo( 'template_directory' ); ?>/img/footer-3.jpg" alt="Photo: architectural detail"/></li>
-				<li><img src="<?php bloginfo( 'template_directory' ); ?>/img/footer-4.jpg" alt="Photo: notepad"/></li>
+				<li><img src="<?php the_field('global-img-1', 'option'); ?>" /></li>
+				<li><img src="<?php the_field('global-img-2', 'option'); ?>" /></li>
+				<li><img src="<?php the_field('global-img-3', 'option'); ?>" /></li>
+				<li><img src="<?php the_field('global-img-4', 'option'); ?>" /></li>
 			</ul>
 
 
