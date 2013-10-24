@@ -19,26 +19,29 @@ get_header(); ?>
 
 			<h1 class="page-title"><?php the_title(); ?> <?php the_field('people-title'); ?></h1>
 
-			<?php if ( has_post_thumbnail() ) { ?>
-				<div class="people-portrait"><?php the_post_thumbnail('medium'); ?></div>
-			<?php } ?>
 
 
 			<div class="people-details">
 
 
+				<div class="people-details-area">
 
-				<ul class="people-details-nav">
-					<?php if($post->post_content=="") : ?>
-					<!-- No content -->
-					<?php else : ?>
-					<li><a href="#people-content">Biography</a></li>
-					<?php endif; ?>
-					<?php if (get_field('people-directories_information')): ?><li><a href="#people-directories_information">Directories Information</a></li><?php endif; ?>
-					<?php if (get_field('people-area_of_practice')): ?><li><a href="#people-area_of_practice">Areas of Practice</a></li><?php endif; ?>
-					<li><a href="#people-case_news"><?php the_title(); ?> Case News &amp;&nbsp;Press</a></li>
-				</ul>
+					<?php if ( has_post_thumbnail() ) { ?>
+						<div class="people-portrait"><?php the_post_thumbnail('medium'); ?></div>
+					<?php } ?>
 
+					<ul class="people-details-nav">
+						<?php if($post->post_content=="") : ?>
+						<!-- No content -->
+						<?php else : ?>
+						<li><a href="#people-content">Biography</a></li>
+						<?php endif; ?>
+						<?php if (get_field('people-directories_information')): ?><li><a href="#people-directories_information">Directories Information</a></li><?php endif; ?>
+						<?php if (get_field('people-area_of_practice')): ?><li><a href="#people-area_of_practice">Areas of Practice</a></li><?php endif; ?>
+						<li><a href="#people-case_news"><?php the_title(); ?> Case News &amp;&nbsp;Press</a></li>
+					</ul>
+				
+				</div>
 
 
 				<div class="people-details-sections">
