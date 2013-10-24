@@ -269,7 +269,9 @@ a.publication-image img {
 /* === Single People =============================== */
 
 .single-people .wp-post-image {
-	width: 40%;
+	width: 100%;
+	max-width: 100%;
+	
 }
 .people-content {
 	text-align: left;
@@ -282,8 +284,16 @@ a.publication-image img {
 }
 .people-details {
 	margin-top: 1em;
-	border-top: 1px dotted #ccc;
 	clear: both;
+}
+.people-details-area {
+	width: 25%;
+	display: block;
+	text-align: centre;
+	margin: 0;
+	padding: 0;
+	clear: both;
+	float: left;
 }
 .people-details-nav {
 	display: block;
@@ -293,10 +303,10 @@ a.publication-image img {
 	padding: 0;
 	clear: both;
 	float: left;
-	width: 25%;
 	text-align: right;
 	margin-top: 0.4em;
 	border-bottom: none;
+	width: 100%;
 }
 .people-details-nav li {
 }
@@ -311,9 +321,9 @@ a.publication-image img {
 	cursor: default;
 }
 .people-details-sections {
-	width: 73%;
+	width: 72%;
 	float: left;
-	margin: 0px 0 20px 2%;
+	margin: 0px 0 20px 3%;
 }
 .people-details h2 {
 	text-align: left;
@@ -326,7 +336,7 @@ a.publication-image img {
 }
 h2.tab-title {
 	text-align: left;
-	margin-top: 0.4em;
+	margin-top: 0em;
 	font-size: 1.5em;
 }
 .people-tab {
