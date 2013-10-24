@@ -350,18 +350,21 @@ h2.tab-title {
 	text-align: center;
 }
 .type-post {
-	max-width: 60%;
-	margin-left: 20%;
-	padding: 20px 20px 0 0;
+	width: 50%;
+	float: left;
+	padding: 20px 20px 20px 0;
+}
+.type-post:nth-child(2n+2) {
+	clear: left;
 }
 .home .type-post {
 	width: auto;
 	padding: 0;
 }
 .blog .nav-next {
-	margin-right: 20%;
+	margin-right: 0%;
 	
 }
 .blog .nav-previous {
-	margin-left: 20%;
+	margin-left: 00%;
 }
